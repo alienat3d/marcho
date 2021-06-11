@@ -3,22 +3,87 @@
 @import "reset";
 @import "global";
 // === PARTIALS ===
-// font-family: 'Quicksand', sans-serif;
+// === REUSABLE BLOCKS ===
+.logo {
+  &__image {
+  }
+}
+// === / REUSABLE BLOCKS ===
+// === HEADER ===
+.header {
+  padding: 40px 0;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
+.menu {
+  &__list {
+    display: flex;
+  }
 
+  &__item {
+  }
+  &__item + &__item {
+    padding-left: 35px;
+  }
 
+  &__link {
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    @extend %quicksand-400;
+    color: $title;
+    border-bottom: 1px solid transparent;
+    transition: $transition-fast;
+    &:hover {
+      @extend %quicksand-500;
+      color: $accent;
+      border-bottom: 1px solid $accent;
+      transition: $transition-fast;
+    }
+  }
+  &__link--active {
+    @extend %quicksand-500;
+    color: $accent;
+    border-bottom: 1px solid $accent;
+  }
+}
+.user-nav {
+  display: flex;
 
+  &__link {
+    position: relative;
+    text-align: center;
+  }
+  &__link + &__link {
+    padding-left: 25px;
+  }
 
-
-
-
-
-
-
-
-
-
+  &__number {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $accent;
+    font-size: 12px;
+    line-height: 22px;
+    color: $white;
+  }
+}
+// === / HEADER ===
+// === section ===
+// === / section ===
+// === section ===
+// === / section ===
+// === section ===
+// === / section ===
+// === FOOTER ===
+// === / FOOTER ===
 
 // === ADAPTIVE ===
 @import "media";
