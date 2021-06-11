@@ -28,25 +28,25 @@
   &__item {
   }
   &__item + &__item {
-    padding-left: 35px;
+    padding-left: 32px;
   }
 
   &__link {
-    padding-bottom: 1px;
+    padding: 0 3px 5px;
     text-transform: uppercase;
-    @extend %quicksand-400;
+    @extend %roboto-500;
     color: $title;
     border-bottom: 1px solid transparent;
     transition: $transition-fast;
     &:hover {
-      @extend %quicksand-500;
+      // @extend %roboto-700;
       color: $accent;
       border-bottom: 1px solid $accent;
       transition: $transition-fast;
     }
   }
   &__link--active {
-    @extend %quicksand-500;
+    @extend %roboto-700;
     color: $accent;
     border-bottom: 1px solid $accent;
   }
