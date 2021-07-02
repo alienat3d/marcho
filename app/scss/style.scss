@@ -4,10 +4,7 @@
 @import "global";
 // === PARTIALS ===
 // === REUSABLE BLOCKS ===
-.logo {
-  &__image {
-  }
-}
+
 // === / REUSABLE BLOCKS ===
 // === HEADER ===
 .header {
@@ -25,8 +22,6 @@
     display: flex;
   }
 
-  &__item {
-  }
   &__item + &__item {
     padding-left: 32px;
   }
@@ -83,6 +78,76 @@
 // === section ===
 // === / section ===
 // === FOOTER ===
+.footer {
+  background-color: $background;
+}
+.container {
+}
+.footer-top {
+
+		&__item {
+		}
+
+		&__address-link {
+		}
+
+		&__address {
+		}
+
+		&__email {
+		}
+
+		&__phone {
+		}
+
+		&__social-list {
+		}
+
+		&__social-item {
+		}
+
+		&__social-link {
+		}
+
+		&__social-image {
+		}
+
+		&__title {
+		}
+
+		&__list {
+		}
+
+		&__list-item {
+		}
+
+		&__item-link {
+		}
+
+		&__text {
+		}
+
+		&__form {
+		}
+
+		&__form-input {
+		}
+
+		&__form-button {
+		}
+}
+
+.footer-bottom {
+
+		&__copyright {
+		}
+
+		&__payments {
+		}
+
+		&__payments-icon {
+		}
+}
 // === / FOOTER ===
 
 // === ADAPTIVE ===
