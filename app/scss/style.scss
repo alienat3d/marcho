@@ -23,13 +23,13 @@
   }
 
   &__item + &__item {
-    padding-left: 32px;
+    padding-left: 35px;
   }
 
   &__link {
     padding: 0 3px 5px;
     text-transform: uppercase;
-    @extend %roboto-500;
+    @extend %roboto-400;
     color: $title;
     border-bottom: 1px solid transparent;
     transition: $transition-fast;
@@ -37,7 +37,6 @@
       // @extend %roboto-700;
       color: $accent;
       border-bottom: 1px solid $accent;
-      transition: $transition-fast;
     }
   }
   &__link--active {
