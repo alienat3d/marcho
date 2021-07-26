@@ -76,16 +76,13 @@
 .top-slider {
   padding: 65px 0 45px;
   background-color: $background;
-  background-image: url('../images/top-slider-bg.png');
+  background-image: url('../images/decor/top-slider-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
 
   &__container {
     max-width: 1560px;
-  }
-
-  &__inner {
   }
 
   &__item {
@@ -114,9 +111,6 @@
   &__link {
     @extend %btn;
     padding: 15px 35px;
-  }
-
-  &__image {
   }
 
   .slick-dots {
@@ -179,9 +173,6 @@
   border-bottom: 1px solid #ececec;
   display: flex;
 
-  &__item {
-  }
-
   &__contact {
     margin-right: 50px;
     width: 250px;
@@ -201,18 +192,6 @@
     max-width: 470px;
   }
 
-  &__address-link {
-  }
-
-  &__address {
-  }
-
-  &__email {
-  }
-
-  &__phone {
-  }
-
   &__address,
   &__email,
   &__phone {
@@ -224,9 +203,6 @@
     margin-top: 30px;
     display: flex;
     align-items: center;
-  }
-
-  &__social-item {
   }
 
   &__social-item + &__social-item {
@@ -247,21 +223,12 @@
     }
   }
 
-  &__social-image {
-  }
-
   &__title {
     margin-bottom: 40px;
     @extend %roboto-500;
     font-size: 22px;
     line-height: 1;
     color: $title;
-  }
-
-  &__list {
-  }
-
-  &__list-item {
   }
 
   &__item-link {
@@ -271,9 +238,6 @@
 
   &__text {
     margin-bottom: 25px;
-  }
-
-  &__form {
   }
 
   &__form-input {
