@@ -9,6 +9,7 @@
   "author": "Al Tsaplin",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/ui": "^4.0.0-beta.0",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp": "^4.0.2",

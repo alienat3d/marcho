@@ -215,18 +215,9 @@
     font-size: 22px;
     color: $title;
   }
-
-  &__item-text {
-  }
 }
 
 .categories {
-  &__title {
-  }
-
-  &__text {
-  }
-
   &__items {
     display: grid;
     min-height: 635px;
@@ -296,8 +287,61 @@
   }
 }
 // === / INFO-CATEGORIES ===
-// === section ===
-// === / section ===
+
+// === FASHION ===
+.video-fashion {
+  padding: 120px 0;
+  background-image: url("../images/decor/video-fashion-bg.svg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: $background;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__pop-up {
+    margin-right: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 535px;
+    width: 100%;
+    height: 479px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__content {
+    padding: 70px 0;
+    max-width: 570px;
+  }
+
+  &__suptitle {
+    margin-bottom: 24px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $accent;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  &__text {
+    margin-bottom: 59px;
+  }
+
+  &__link {
+    @extend %btn;
+    letter-spacing: 3.2px;
+  }
+}
+// === / FASHION ===
+
 // === FOOTER ===
 .footer {
   background-color: $background;

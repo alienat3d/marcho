@@ -47,3 +47,12 @@ $transition-fast: all 0.3s;
   cursor: pointer;
 }
 // === / BUTTONS ===
+
+// === snippet for "FancyBox" plugin ===
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+// === / snippet for "FancyBox" plugin ===

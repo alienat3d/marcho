@@ -7,7 +7,6 @@ body {
   display: flex;
   flex-direction: column;
   @extend %quicksand-500;
-
   font-size: 16px;
   line-height: 26px;
   color: $default;
