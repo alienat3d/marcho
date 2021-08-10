@@ -40,7 +40,129 @@ a {
 }
 
 .text {
-  margin: 0 auto 55px;
+  margin: 0 auto 60px;
   max-width: 570px;
   text-align: center;
+}
+
+.product-card {
+  max-width: 370px;
+  text-align: center;
+
+  &--sale {
+    .product-card__price-old{
+      display: block;
+    }
+
+    .product-card__image-box::before {
+      content: 'SALE';
+      @extend %btn;
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      padding: 9px 10px;
+      line-height: 1;
+      letter-spacing: 0.8px;
+    }
+  }
+  
+  &__image-box {
+    position: relative;
+    margin-bottom: 30px;
+    height: 370px;
+    overflow: hidden;
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+
+  &__link-box {
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(300%);
+    border-radius: 25px;
+    width: 212px;
+    height: 50px;
+    background-color: $white;
+    box-shadow: 0 5px 30px rgba(152, 152, 152, 0.2);
+  }
+
+  &__link {
+    display: inherit;
+    position: relative;
+
+    path {
+      transition: $transition-fast;
+    }
+
+    &--lines {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: -4px;
+        width: 1px;
+        height: 30px;
+        background-color: $line;
+      }
+      &::before {
+        left: -27px;
+      }
+      &::after {
+        right: -27px;
+      }
+    }
+
+    &--mag-glass {
+      margin-top: 3px;
+    }
+
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__title {
+    margin: 19px 0 20px;
+    @extend %roboto-400;
+    font-size: 22px;
+    color: $title;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    @extend %roboto-400;
+  }
+
+  &__price-new {
+    padding: 0 12px;
+    color: $title;
+  }
+
+  &__price-old {
+    display: none;
+    padding: 0 12px;
+    color: $default;
+    text-decoration: line-through;
+  }
+
+  &:hover {
+    .product-card__link-box {
+      transform: translateY(0);
+    }
+  }
+}
+
+.star-rating {
+  margin: 0 auto;
 }
