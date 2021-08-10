@@ -25,12 +25,6 @@ a {
   padding: 0 15px;
 }
 
-.top-container {
-  max-width: 1700px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .main {
   flex-grow: 1;
 }
@@ -56,12 +50,12 @@ a {
   text-align: center;
 
   &--sale {
-    .product-card__price-old{
+    .product-card__price-old {
       display: block;
     }
 
     .product-card__image-box::before {
-      content: 'SALE';
+      content: "SALE";
       @extend %btn;
       position: absolute;
       top: 25px;
@@ -71,7 +65,7 @@ a {
       letter-spacing: 0.8px;
     }
   }
-  
+
   &__image-box {
     position: relative;
     margin-bottom: 30px;
@@ -171,4 +165,54 @@ a {
 
 .star-rating {
   margin: 0 auto;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  padding-left: 24px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/icons/home.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 40px;
+    color: #727272;
+
+    &::after {
+      content: "";
+      top: 9px;
+      right: 15px;
+      position: absolute;
+      width: 9px;
+      height: 10px;
+      background-image: url("../images/icons/angles-right.svg");
+    }
+
+    &:last-child {
+      color: $accent;
+      padding-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
 }

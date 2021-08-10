@@ -72,6 +72,28 @@
 }
 // === / HEADER ===
 
+// === TOP-BANNER ===
+.top {
+  &__container {
+    margin: 0 auto;
+    padding: 130px 0 130px;
+    max-width: 1700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @extend %roboto-400;
+    font-weight: 400;
+    line-height: normal;
+    color: #15181d;
+  }
+}
+// === / TOP-BANNER ===
+
 // === TOP-SLIDER ===
 .top-slider {
   padding: 65px 0 45px;
