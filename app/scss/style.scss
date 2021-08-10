@@ -370,6 +370,90 @@
 }
 // === / PRODUCTS ===
 
+// === PROMO ===
+.promo {
+  padding: 160px 0;
+  background-image: url("../images/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  text-align: center;
+
+  &__inner {
+    margin-left: auto;
+    max-width: 570px;
+    width: 100%;
+  }
+
+  &__suptitle {
+    margin-bottom: 25px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $accent;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__countdown {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__countdown-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    width: 121px;
+    height: 120px;
+    background-color: $white;
+    box-shadow: 0 10px 40px rgba(187, 187, 187, 0.3);
+  }
+
+  &__countdown-text {
+    margin-top: 10px;
+    color: $default;
+  }
+
+  &__countdown-days,
+  &__countdown-hours,
+  &__countdown-minutes,
+  &__countdown-seconds {
+    margin-top: 12px;
+    @extend %roboto-700;
+    font-size: 48px;
+    color: $title;
+  }
+
+  &__link {
+    margin-top: 60px;
+    display: inline-block;
+    padding: 19px 33px;
+    border: 1px solid $accent;
+    @extend %roboto-400;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    color: $title;
+  }
+}
+
+// === / PROMO ===
+
+// === PARTNERS ===
+.partners {
+  padding-top: 60px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+  }
+}
+// === / PARTNERS ===
+
 // === FOOTER ===
 .footer {
   background-color: $background;
