@@ -4,7 +4,7 @@ const scss = require("gulp-sass");
 const concat = require("gulp-concat");
 const autoprefixer = require("gulp-autoprefixer");
 const uglify = require("gulp-uglify");
-// const imagemin      = require("gulp-imagemin");
+const imagemin = require("gulp-imagemin");
 const del = require("del");
 const browserSync = require("browser-sync").create();
 
@@ -45,20 +45,20 @@ function scripts() {
     .pipe(browserSync.stream());
 }
 
-// function images() {
-//   return src("app/images/**/*")
-//     .pipe(imagemin(
-//       [
-//         imagemin.gifsicle({ interlaced: true }),
-//         imagemin.mozjpeg({ quality: 75, progressive: true }),
-//         imagemin.optipng({ optimizationLevel: 5 }),
-//         imagemin.svgo({
-//           plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
-//         }),
-//       ])
-//     )
-//     .pipe(dest("dist/images"));
-// }
+function images() {
+  return src("app/images/**/*")
+    .pipe(imagemin(
+      [
+        imagemin.gifsicle({ interlaced: true }),
+        imagemin.mozjpeg({ quality: 75, progressive: true }),
+        imagemin.optipng({ optimizationLevel: 5 }),
+        imagemin.svgo({
+          plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
+        }),
+      ])
+    )
+    .pipe(dest("dist/images"));
+}
 
 function build() {
   return src(["app/**/*.html", "app/css/style.min.css", "app/js/main.min.js"], {
@@ -80,10 +80,10 @@ exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.watching = watching;
-// exports.images = images;
+exports.images = images;
 exports.cleanDist = cleanDist;
 
 exports.default = parallel(styles, scripts, browsersync, watching);
-exports.build = series(cleanDist, build);
+exports.build = series(cleanDist, images, build);
 
-// exports.build = series(cleanDist, images, build);  //replace
+// exports.build = series(cleanDist, build);  //replace other lines connected to "images" must be commented
