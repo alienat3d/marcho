@@ -454,6 +454,87 @@
 }
 // === / PARTNERS ===
 
+// === BLOG ===
+.blog {
+  padding: 50px 0 160px;
+  background-image: url("../images/decor/blog-bg-elements.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__title {
+    margin-bottom: 25px;
+    @extend %roboto-400;
+    font-size: 22px;
+    line-height: 32px;
+    color: $title;
+  }
+
+  &__text {
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    border: 1px solid $line;
+    max-width: 370px;
+  }
+
+  &__image-link {
+    display: block;
+  }
+
+  &__image {
+    height: 288px;
+    object-fit: cover;
+  }
+
+  &__inner {
+    padding: 30px 40px;
+  }
+
+  &__info {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__info-author::before {
+    background-image: url('../images/icons/author.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__info-date::before {
+    background-image: url('../images/icons/clock.svg');
+    background-repeat: no-repeat;
+  }
+
+  &__info-author,
+  &__info-date {
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 4px;
+      left: 0;
+    }
+  }
+
+  &__title-link {
+  }
+
+  &__more {
+  }
+}
+// === / BLOG ===
+
 // === FOOTER ===
 .footer {
   background-color: $background;
