@@ -11,6 +11,10 @@
 .header {
   padding: 40px 0;
 
+  &--404-page{
+    background-color: $background;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -620,7 +624,7 @@
     background-color: $background;
   }
 
-  &__text{
+  &__text {
     margin-bottom: 25px;
   }
 
@@ -646,6 +650,52 @@
   }
 }
 // === / MODAL ===
+
+// === 404 ===
+.page-404 {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 570px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @extend %roboto-700;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: 0;
+    color: #28384f;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    max-width: 455px;
+  }
+
+  &__link {
+    padding: 19px 34px;
+    display: inline-block;
+    @extend %roboto-400;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $accent;
+    box-shadow: 0 5px 25px rgba(254, 62, 87, 0.35);
+  }
+
+  &__image {
+    max-width: 600px;
+  }
+}
+// === / 404 ===
 
 // === FOOTER ===
 .footer {
