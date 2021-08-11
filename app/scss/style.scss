@@ -620,6 +620,10 @@
     background-color: $background;
   }
 
+  &__text{
+    margin-bottom: 25px;
+  }
+
   &__button {
     display: block;
     margin-top: -34px;
