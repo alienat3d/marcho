@@ -489,15 +489,15 @@
     justify-content: space-between;
     position: relative;
 
-    &::after{
+    &::after {
       z-index: -1;
-      content: '';
+      content: "";
       position: absolute;
       top: -29px;
       right: -22px;
       width: 126px;
       height: 53px;
-      background-image: url('../images/decor/blog-bg-dots.svg');
+      background-image: url("../images/decor/blog-bg-dots.svg");
     }
   }
 
@@ -581,6 +581,67 @@
   }
 }
 // === / BLOG ===
+
+// === MODAL ===
+.modal {
+  margin: 0 auto;
+  padding: 120px 0;
+  max-width: 570px;
+
+  &__links {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__link {
+    margin: 0 30px;
+    @extend %roboto-400;
+    font-size: 22px;
+    color: #909090;
+    text-transform: uppercase;
+  }
+
+  &__link--active {
+    @extend %roboto-700;
+    color: $accent;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  &__input {
+    border: none;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+    color: $title;
+    background-color: $background;
+  }
+
+  &__button {
+    display: block;
+    margin-top: -34px;
+    border: none;
+    padding: 24px 0;
+    width: 100%;
+    text-align: center;
+    @extend %roboto-400;
+    line-height: 1;
+    letter-spacing: 3.2px;
+    color: $white;
+    background-color: #292929;
+    cursor: pointer;
+  }
+
+  &__forgot-pw-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: $accent;
+  }
+}
+// === / MODAL ===
 
 // === FOOTER ===
 .footer {
