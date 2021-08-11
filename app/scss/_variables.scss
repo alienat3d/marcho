@@ -49,6 +49,16 @@ $transition-fast: all 0.3s;
 }
 // === / BUTTONS ===
 
+// === HIDE CHECKBOX ===
+%hide-checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+}
+// === / HIDE CHECKBOX ===
+
 // === snippet for "FancyBox" plugin ===
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
