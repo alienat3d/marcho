@@ -1,4 +1,5 @@
-$(function() {
+"use strict"
+$(function () {
   // === SLICK SLIDER PLUGIN ===
   $(".top-slider__inner").slick({
     dots: true,
@@ -18,7 +19,21 @@ $(function() {
   });
   // === / RATEYO PLUGIN ===
 
-  // === COUNTDOWN ===
+  // === RANGE SLIDER PLUGIN ===
+  $(".filter-price__input").ionRangeSlider({
+    prefix: "$",
+    onStart: function (data) {
+      $(".filter-price__from").text(data.from);
+      $(".filter-price__to").text(data.to);
+    },
+    onChange: function (data) {
+      $(".filter-price__from").text(data.from);
+      $(".filter-price__to").text(data.to);
+    },
+  });
+  // === / RANGE SLIDER PLUGIN ===
+
+  // === COUNTDOWN JS ===
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
@@ -59,7 +74,7 @@ $(function() {
     const timeinterval = setInterval(updateClock, 1000);
   }
 
-  const deadline = $(".promo__countdown").attr('data-time');
+  const deadline = $(".promo__countdown").attr("data-time");
   initializeClock(".promo__countdown", deadline);
-  // === / COUNTDOWN ===
+  // === / COUNTDOWN JS ===
 });
