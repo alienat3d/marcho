@@ -903,6 +903,134 @@
     height: 21px;
   }
 }
+
+.filter-category {
+  &__label {
+    display: block;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    @extend %hide-checkbox;
+
+    &:checked + .filter-category__checkbox {
+      color: $white;
+      background-color: $accent;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    color: $title;
+    background-color: $background;
+  }
+}
+
+.filter-tags {
+  &__label {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  &__input {
+    @extend %hide-checkbox;
+    &:checked + .filter-tags__checkbox {
+      border: 1px solid $accent;
+      color: $white;
+      background-color: $accent;
+    }
+  }
+
+  &__checkbox {
+    border: 1px solid $default;
+    padding: 9px 18px;
+  }
+}
+
+.shop-content {
+  width: 100%;
+
+  &__filter {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $line;
+    padding: 20px 30px;
+  }
+
+  &__filter-buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__filter-btn {
+    margin-left: 15px;
+    border: none;
+    line-height: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    & + & {
+      margin-left: 5px;
+    }
+
+    &.shop-content__filter-btn--active {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__inner {
+    border-bottom: 2px solid #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .product-card {
+      margin-bottom: 40px;
+    }
+  }
+}
+// === FORM STYLER PLUGIN ===
+.jq-selectbox__select {
+  height: 32px;
+  padding: 0 30px 0 0;
+  border: none;
+  @extend %quicksand-500;
+  color: $default;
+  text-shadow: none;
+  background: transparent;
+  box-shadow: none;
+
+  &:hover {
+    background: transparent;
+  }
+}
+.jq-selectbox__trigger {
+  border-left: none;
+}
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 10px;
+  height: 5px;
+  border: none;
+  background-image: url("../images/icons/angle_down.svg");
+}
+// === / FORM STYLER PLUGIN ===
 // === / SHOP ===
 
 // === FOOTER ===
