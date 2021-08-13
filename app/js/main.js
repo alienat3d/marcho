@@ -33,6 +33,25 @@ $(function () {
   });
   // === / RANGE SLIDER PLUGIN ===
 
+  // === FORM STYLER PLUGIN ===
+  $(".select-styled").styler();
+  // === / FORM STYLER PLUGIN ===
+
+  // === LIST FILTER JQ ===
+  $(".shop-content__filter-btn").on('click', function(){
+    $(".shop-content__filter-btn").removeClass("shop-content__filter-btn--active");
+    $(this).addClass("shop-content__filter-btn--active");
+  });
+
+  $(".button-list").on("click", function(){
+    $(".product-card").addClass("product-card--list");
+  });
+
+  $(".button-grid").on("click", function(){
+    $(".product-card").removeClass("product-card--list");
+  });
+  // === / LIST FILTER JS ===
+
   // === COUNTDOWN JS ===
   function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
