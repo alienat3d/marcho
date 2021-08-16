@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marcho</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <!-- === HEADER === -->
-  <header class="header">
+  <header class="header header--404-page">
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="#">
@@ -70,29 +70,26 @@
   <!-- === / HEADER === -->
   <main class="main">
 
-    <div class="top-banner">
-      <div class="top-banner__container" style="background-image: url('images/top-bg.jpg');">
-        <div class="container">
-          <h2 class="top-banner__title title">
-            LOG IN
-          </h2>
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="index.html">
-                  Home
-                </a>
-              </li>
-              <li class="breadcrumbs__item">
-                <span class="breadcrumbs__link" href="#">
-                  Log in
-                </span>
-              </li>
-            </ul>
+<!-- === 404 === -->
+    <div class="page-404">
+      <div class="container">
+        <div class="page-404__inner">
+          <div class="page-404__content">
+            <h2 class="page-404__title">
+              Oops... Page Not Found!
+            </h2>
+            <p class="page-404__text">
+              We,re sorry but we can’t seem to find the pages you request. This might be because you have typed the web address not find incorrectly.
+            </p>
+            <a class="page-404__link" href="index.html">
+              BACK TO HOME
+            </a>
           </div>
+          <img class="page-404__image" src="images/error-404.png" alt="image of error 404">
         </div>
       </div>
     </div>
+<!-- === / 404 === -->
 
   </main>
   <!-- === FOOTER === -->
