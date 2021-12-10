@@ -1149,5 +1149,11 @@
 }
 // === / FOOTER ===
 
+.title {
+  & + & {
+    margin-bottom: 10px;
+  }
+}
+
 // === ADAPTIVE ===
 @import "media";

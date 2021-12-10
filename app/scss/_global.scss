@@ -62,7 +62,7 @@ a {
 
     &.product-card--sale {
       .product-card__title::after {
-        content: "SALE";
+        content: 'SALE';
         position: absolute;
         top: 0;
         right: 0;
@@ -169,7 +169,7 @@ a {
     }
 
     .product-card__image-box::before {
-      content: "SALE";
+      content: 'SALE';
       @extend %btn;
       position: absolute;
       top: 25px;
@@ -219,7 +219,7 @@ a {
     &--lines {
       &::before,
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         top: -4px;
         width: 1px;
@@ -293,13 +293,13 @@ a {
   padding-left: 24px;
   position: relative;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 3px;
     left: 0;
     width: 16px;
     height: 16px;
-    background-image: url("../images/icons/home.svg");
+    background-image: url('../images/icons/home.svg');
     background-repeat: no-repeat;
   }
 
@@ -313,13 +313,13 @@ a {
     color: #727272;
 
     &::after {
-      content: "";
+      content: '';
       top: 9px;
       right: 15px;
       position: absolute;
       width: 9px;
       height: 10px;
-      background-image: url("../images/icons/angles-right.svg");
+      background-image: url('../images/icons/angles-right.svg');
     }
 
     &:last-child {
@@ -344,12 +344,17 @@ a {
   justify-content: center;
   padding-top: 40px;
 
+  .pagination__list {
+    display: flex;
+    padding: 0 35px;
+  }
+
   &__arrows {
     position: relative;
     text-transform: uppercase;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 8px;
       width: 5px;
@@ -357,17 +362,12 @@ a {
     }
   }
 
-  .pagination__list {
-    display: flex;
-    padding: 0 35px;
-  }
-
   &__item {
     padding: 0 15px;
   }
 
   &__link {
-    &--active{
+    &--active {
       @extend %quicksand-700;
       color: $accent;
     }
@@ -377,7 +377,7 @@ a {
     padding-left: 15px;
 
     &::before {
-      background-image: url("../images/icons/angle-left.svg");
+      background-image: url('../images/icons/angle-left.svg');
       left: 0;
     }
   }
@@ -386,7 +386,7 @@ a {
     padding-right: 15px;
 
     &::before {
-      background-image: url("../images/icons/angle-right.svg");
+      background-image: url('../images/icons/angle-right.svg');
       right: 0;
     }
   }
