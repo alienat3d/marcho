@@ -34,7 +34,7 @@ $(function () {
   // === / RANGE SLIDER PLUGIN ===
 
   // === FORM STYLER PLUGIN ===
-  $('.select-styled').styler();
+  $('.select-styled, .product-single__number').styler();
   // === / FORM STYLER PLUGIN ===
 
   // === PRODUCT-PAGE 2XSLIDER JQ ===
