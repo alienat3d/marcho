@@ -37,7 +37,7 @@ $(function () {
   $('.select-styled, .product-single__number').styler();
   // === / FORM STYLER PLUGIN ===
 
-  // === PRODUCT-PAGE 2XSLIDER JQ ===
+  // === [PRODUCT-PAGE] 2XSLIDER JQ ===
   $('.product-slide__thumbs').slick({
     asNavFor: '.product-slide__large',
     slidesToShow: 4,
@@ -52,7 +52,20 @@ $(function () {
     arrows: false,
     fade: true,
   });
-  // === / PRODUCT-PAGE 2XSLIDER JQ ===
+  // === / [PRODUCT-PAGE] 2XSLIDER JQ ===
+
+  // === [PRODUCT-PAGE] TABS JQ ===
+  $('.product-tabs__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+    $(this).addClass('product-tabs__top-item--active');
+
+    $('.product-tabs__content-item').removeClass(
+      'product-tabs__content-item--active'
+    );
+    $($(this).attr('href')).addClass('product-tabs__content-item--active');
+  });
+  // === / [PRODUCT-PAGE] TABS JQ ===
 
   // === LIST FILTER JQ ===
   $('.shop-content__filter-btn').on('click', function () {
