@@ -171,6 +171,25 @@ a {
     .product-card__image-box::before {
       content: 'SALE';
       @extend %btn;
+      cursor: default;
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      padding: 9px 10px;
+      line-height: 1;
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &--50off {
+    .product-card__price-old {
+      display: block;
+    }
+
+    .product-card__image-box::before {
+      content: '50% OFF';
+      @extend %btn;
+      cursor: default;
       position: absolute;
       top: 25px;
       left: 25px;
