@@ -534,38 +534,6 @@
     padding: 30px 40px;
   }
 
-  &__info {
-    margin-bottom: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-
-  &__info-author::before {
-    background-image: url('../images/icons/author.svg');
-    background-repeat: no-repeat;
-  }
-
-  &__info-date::before {
-    background-image: url('../images/icons/clock.svg');
-    background-repeat: no-repeat;
-  }
-
-  &__info-author,
-  &__info-date {
-    padding-left: 30px;
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 4px;
-      left: 0;
-    }
-  }
-
   &__image-title {
     margin-bottom: 25px;
     @extend %roboto-400;
@@ -579,6 +547,41 @@
     svg {
       margin-bottom: 1px;
     }
+  }
+}
+.blog-box {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  &__author,
+  &__date {
+    padding-left: 30px;
+    position: relative;
+    transition: $transition-fast;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 4px;
+      left: 0;
+    }
+
+    &:hover {
+      color: $title;
+    }
+  }
+  &__author::before {
+    background-image: url('../images/icons/author.svg');
+    background-repeat: no-repeat;
+  }
+  &__date::before {
+    background-image: url('../images/icons/clock.svg');
+    background-repeat: no-repeat;
   }
 }
 // === / BLOG ===
@@ -908,6 +911,7 @@
   &__label {
     display: block;
     margin-bottom: 15px;
+    cursor: pointer;
 
     &:last-child {
       margin-bottom: 0;
@@ -1478,6 +1482,162 @@
   }
 }
 // === / RELATED ===
+
+// === BLOG-PAGE ===
+.blog-page {
+  padding: 120px 0 60px;
+
+  &__item--slider {
+    .blog-page__item-box {
+      margin-top: -8px;
+    }
+  }
+  &__slider {
+    .slick-prev,
+    .slick-next {
+      z-index: 5;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: $accent;
+      box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.3);
+      cursor: pointer;
+      transition: $transition-fast;
+
+      path {
+        fill: $white;
+        transition: $transition-fast;
+      }
+    }
+    .slick-prev {
+      left: 40px;
+      svg {
+        transform: translateX(-1px);
+      }
+    }
+    .slick-next {
+      right: 40px;
+      svg {
+        transform: translateX(1px);
+      }
+    }
+    .slick-disabled {
+      background-color: $white;
+      box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3);
+      path {
+        fill: $accent;
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    margin-right: 30px;
+    width: 770px;
+  }
+  &__aside {
+    width: 370px;
+  }
+  &__item {
+    margin-bottom: 60px;
+    transition: $transition-regular;
+
+    &:hover {
+      box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35);
+    }
+    &.blog-page__item--no-image {
+      border-top: 1px solid #ececec;
+    }
+  }
+  &__item-link,
+  &__item-box-link {
+    display: block;
+  }
+  &__img {
+    display: block;
+    max-width: 770px;
+    height: 450px;
+    object-fit: cover;
+  }
+  &__item-box {
+    border: 1px solid #ececec;
+    border-top: none;
+    padding: 40px;
+  }
+  &__item-title {
+    margin-bottom: 20px;
+    @extend %roboto-500;
+    font-size: 22px;
+    line-height: 32px;
+    color: $title;
+    transition: $transition-fast;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  .blog-box {
+    justify-content: start;
+
+    &__author {
+      margin-right: 30px;
+    }
+  }
+}
+.filter-search {
+  &__title {
+  }
+  &__form {
+  }
+  &__input {
+  }
+  &__btn {
+  }
+  &__btn-img {
+  }
+}
+.filter {
+  &__item {
+  }
+  &__title {
+  }
+}
+.filter-category {
+  &__title {
+  }
+  &__form {
+  }
+  &__label {
+  }
+  &__input {
+  }
+  &__checkbox {
+  }
+}
+.filter-tags {
+  &__title {
+  }
+  &__form {
+  }
+  &__label {
+  }
+  &__input {
+  }
+  &__checkbox {
+  }
+}
+
+// === / BLOG-PAGE ===
 
 // === FOOTER ===
 .footer {
