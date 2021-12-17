@@ -9,33 +9,29 @@ $line: #ececec;
 // === TRANSITION ===
 $transition-fast: all 0.3s;
 $transition-regular: all 0.5s;
+$transition-slow: all 1s;
 // === / TRANSITION ===
 // === FONTS ===
 %quicksand-400 {
   font-family: 'Quicksand-Regular', sans-serif;
   font-weight: 400;
 }
-
 %quicksand-500 {
   font-family: 'Quicksand-Medium', sans-serif;
   font-weight: 500;
 }
-
 %quicksand-700 {
   font-family: 'Quicksand-Medium', sans-serif;
   font-weight: 700;
 }
-
 %roboto-400 {
   font-family: 'Roboto-Regular', sans-serif;
   font-weight: 400;
 }
-
 %roboto-500 {
   font-family: 'Roboto-Medium', sans-serif;
   font-weight: 500;
 }
-
 %roboto-700 {
   font-family: 'Roboto-Bold', sans-serif;
   font-weight: 700;
@@ -52,6 +48,12 @@ $transition-regular: all 0.5s;
   background-color: $accent;
   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
   cursor: pointer;
+}
+// === / BUTTONS ===
+
+// === BUTTONS ===
+%box-shadow {
+  box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35);
 }
 // === / BUTTONS ===
 
