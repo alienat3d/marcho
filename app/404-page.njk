@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcho - 404</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/404-page.min.css">
+  </head>
+
+  <body>
+    <!-- === HEADER === -->
+    {% include 'app/module/_header/_header.html' %}
+    <!-- === / HEADER === -->
+    <main class="main">
+
+      <!-- === 404 === -->
+      <div class="page-404">
+        <div class="container">
+          <div class="page-404__inner">
+            <div class="page-404__content">
+              <h2 class="page-404__title">
+              Oops... Page Not Found!
+            </h2>
+              <p class="page-404__text">
+              We,re sorry but we can’t seem to find the pages you request. This might be because you have typed the web address not find incorrectly.
+            </p>
+              <a class="page-404__link" href="index.html">
+              BACK TO HOME
+            </a>
+            </div>
+            <img class="page-404__image" src="images/error-404.png" alt="image of error 404">
+          </div>
+        </div>
+      </div>
+      <!-- === / 404 === -->
+
+    </main>
+    <!-- === FOOTER === -->
+    {% include 'app/module/_footer/_footer.html' %}
+    <!-- === / FOOTER === -->
+
+    <!-- === JAVASCRIPT === -->
+    <script src="js/main.min.js"></script>
+    <!-- === / JAVASCRIPT === -->
+  </body>
+
+</html>
