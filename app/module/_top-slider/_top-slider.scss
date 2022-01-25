@@ -1,0 +1,86 @@
+// === TOP-SLIDER ===
+.top-slider {
+  padding: 65px 0 45px;
+  background-color: $background;
+  background-image: url('../images/decor/top-slider-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+
+  &__container {
+    max-width: 1560px;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding: 125px 0 0 175px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    max-width: 670px;
+    @extend %roboto-700;
+    font-size: 58px;
+    line-height: 68px;
+    color: $title;
+  }
+
+  &__text {
+    margin-bottom: 55px;
+    max-width: 470px;
+  }
+
+  &__link {
+    @extend %btn;
+    padding: 15px 35px;
+  }
+
+  .slick-dots {
+    margin-top: -70px;
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 0 5px;
+      line-height: 0;
+
+      button {
+        position: relative;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        padding: 0;
+        width: 28px;
+        height: 28px;
+        font-size: 0;
+        background-color: transparent;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+          width: 6px;
+          height: 6px;
+          background-color: $default;
+        }
+      }
+
+      &.slick-active {
+        button {
+          border-color: $accent;
+
+          &::before {
+            background-color: $accent;
+          }
+        }
+      }
+    }
+  }
+}
+// === / TOP-SLIDER ===

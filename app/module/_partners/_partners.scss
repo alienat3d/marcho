@@ -1,0 +1,12 @@
+// === PARTNERS ===
+.partners {
+  padding-top: 60px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+  }
+}
+// === / PARTNERS ===

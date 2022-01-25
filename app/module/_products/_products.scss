@@ -1,0 +1,27 @@
+// === PRODUCTS ===
+.products {
+  padding: 120px 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px;
+  }
+
+  &__link {
+    margin-top: 60px;
+    display: inline-block;
+    padding: 19px 29px;
+    border: 1px solid $accent;
+    @extend %roboto-400;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    color: $title;
+  }
+}
+// === / PRODUCTS ===
