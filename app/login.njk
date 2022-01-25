@@ -15,68 +15,15 @@
     <!-- === HEADER === -->
     {% include 'app/module/_header/_header.html' %}
     <!-- === / HEADER === -->
+
     <main class="main">
 
-      <div class="top-banner">
-        <div class="top-banner__container" style="background-image: url('images/top-bg.jpg');">
-          <div class="container">
-            <h2 class="top-banner__title title">
-            LOG IN
-            </h2>
-            <div class="breadcrumbs">
-              <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="index.html">
-                  Home
-                </a>
-                </li>
-                <li class="breadcrumbs__item">
-                  <span class="breadcrumbs__link" href="#">
-                  Log in
-                </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- === MODAL === -->
-      <section class="modal">
-        <div class="container">
-          <div class="modal__links">
-            <a class="modal__link" href="#">
-            REGISTER
-          </a>
-            <span class="modal__link modal__link--active">
-            LOGIN
-          </span>
-          </div>
-          <form class="modal__form" action="#">
-            <label class="modal__label">
-            Username or email address*
-            <input class="modal__input" type="text" required>
-            </label>
-            <label class="modal__label">
-            Password*
-            <input class="modal__input" type="password" required>
-            </label>
-            <label class="modal__label">
-              <input type="checkbox">
-            Remember me
-          </label>
-            <button class="modal__button" type="submit">
-            LOG IN
-          </button>
-            <a class="modal__forgot-pw-link" href="#">
-            Lost your password?
-          </a>
-          </form>
-        </div>
-      </section>
-      <!-- === / MODAL === -->
+    {% include 'app/module/_top-banner/_top-banner.html' %}
+    
+    {% include 'app/module/_login/_login.html' %}
 
     </main>
+
     <!-- === FOOTER === -->
     {% include 'app/module/_footer/_footer.html' %}
     <!-- === / FOOTER === -->
