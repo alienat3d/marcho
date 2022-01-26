@@ -84,3 +84,53 @@
   }
 }
 // === / TOP-SLIDER ===
+
+// === @ADAPTIVE ===
+@media (max-width: 1200px) {
+  .top-slider__content {
+    padding-top: 40px;
+    padding-left: 15px;
+  }
+  .top-slider__image {
+    width: 40%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1050px) {
+  .top-slider__content {
+    padding-top: 0;
+    padding-bottom: 50px;
+    padding-left: 15px;
+  }
+  .top-slider__item {
+    .top-slider__image {
+      display: none;
+    }
+  }
+  .top-slider .slick-dots {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .top-slider {
+    padding: 45px 0 30px;
+  }
+  .top-slider__title {
+    margin-bottom: 25px;
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
+
+@media (max-width: 375px) {
+  .top-slider__title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .top-slider__text {
+    margin-bottom: 30px;
+  }
+}
