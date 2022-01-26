@@ -25,6 +25,10 @@
 
   &__item-form {
     max-width: 470px;
+
+    .footer-top__title {
+      pointer-events: none;
+    }
   }
 
   &__address,
@@ -104,7 +108,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  flex-wrap: wrap;
+  min-height: 75px;
   font-size: 12px;
 
   &__payments {
@@ -118,3 +123,87 @@
   }
 }
 // === / FOOTER ===
+
+// @ADAPTIVE
+@media (max-width: 1050px) {
+  .footer-top {
+    flex-wrap: wrap;
+
+    &__form {
+      margin-top: 30px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .footer-top {
+    &__contact {
+      margin-right: 0;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .footer-top {
+    &__item {
+      margin-top: 20px;
+    }
+  }
+  .footer-bottom {
+    justify-content: center;
+
+    &__copyright {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-top {
+    &__form {
+      flex-wrap: wrap;
+    }
+    &__form-input {
+      margin-right: 0;
+      max-width: 100%;
+    }
+    &__form-button {
+      width: 100%;
+    }
+    &__nav {
+      position: relative;
+
+      .footer-top__title::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        background-image: url('../images/icons/angle_down.svg');
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 5px;
+        transition: $transition-fast;
+      }
+      .footer-top__title.footer-top__title--active::after {
+        transform: rotate(180deg);
+      }
+
+      .footer-top__list {
+        display: none;
+      }
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .footer-bottom {
+    font-size: 11px;
+  }
+}

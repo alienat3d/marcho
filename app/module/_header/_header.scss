@@ -95,6 +95,7 @@
     flex-direction: column;
     align-items: center;
     transition: $transition-regular;
+    background-color: $white;
 
     &.menu__list--active {
       transform: translateY(0);

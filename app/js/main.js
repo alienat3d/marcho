@@ -6,6 +6,13 @@ $(function () {
   });
   // === / BURGER MENU ===
 
+  // === FOOTER SLIDE-OUT NAV ===
+  $('.footer-top__title').on('click', function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer-top__title--active');
+  });
+  // === / FOOTER SLIDE-OUT NAV ===
+
   // === SLICK SLIDER PLUGIN ===
   $('.top-slider__inner').slick({
     dots: true,
