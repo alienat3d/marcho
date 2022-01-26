@@ -1,5 +1,11 @@
 'use strict';
 $(function () {
+  // === BURGER MENU ===
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+  // === / BURGER MENU ===
+
   // === SLICK SLIDER PLUGIN ===
   $('.top-slider__inner').slick({
     dots: true,
