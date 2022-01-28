@@ -51,3 +51,35 @@
   }
 }
 // === / VIDEO-FASHION ===
+
+// === @ADAPTIVE ===
+@media (max-width: 1050px) {
+  .video-fashion__inner {
+    display: block;
+  }
+  .video-fashion__pop-up {
+    max-width: 100%;
+    background-position: center top;
+  }
+  .video-fashion__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .video-fashion {
+    padding: 60px 0;
+  }
+  .video-fashion__content {
+    padding: 40px 0;
+  }
+  .video-fashion__suptitle {
+    font-size: 18px;
+  }
+  .video-fashion__title {
+    margin-bottom: 30px;
+  }
+  .video-fashion__pop-up {
+    height: 270px;
+  }
+}
