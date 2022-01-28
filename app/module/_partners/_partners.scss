@@ -1,6 +1,6 @@
 // === PARTNERS ===
 .partners {
-  padding-top: 60px;
+  padding: 60px 0;
 
   &__list {
     display: flex;
@@ -10,3 +10,30 @@
   }
 }
 // === / PARTNERS ===
+
+// === @ADAPTIVE ===
+@media (max-width: 620px) {
+  .partners__list {
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .partners__item {
+    margin: 10px 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .partners__item {
+    margin: 10px 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .partners__list {
+    padding-bottom: 60px 0;
+  }
+  .partners {
+    margin-bottom: 55px;
+  }
+}
