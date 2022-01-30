@@ -106,6 +106,15 @@ $(function () {
       '<button type="button" class="slick-prev"><svg width="8" height="16"><path d="m.992 7.469 4.25-4.25a.747.747 0 0 1 1.059 0l.707.707a.747.747 0 0 1 0 1.058L3.996 8l3.012 3.012a.74.74 0 0 1 0 1.058l-.703.711a.752.752 0 0 1-1.063 0l-4.25-4.25a.745.745 0 0 1 0-1.062Zm0 0"></svg></button>',
     nextArrow:
       '<button type="button" class="slick-next"><svg width="8" height="16"><path d="m7.008 8.531-4.25 4.25a.747.747 0 0 1-1.059 0l-.707-.707a.747.747 0 0 1 0-1.058l3.016-3.012L.992 4.992a.752.752 0 0 1 0-1.062l.703-.711a.752.752 0 0 1 1.063 0l4.25 4.25a.745.745 0 0 1 0 1.062Zm0 0"></svg></button>',
+    responsive: [
+      {
+        breakpoint: 621,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   });
   // === / BLOG SLIDER JQ ===
 
