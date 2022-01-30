@@ -62,3 +62,13 @@
   }
 }
 // === / MODAL ===
+
+// === @ADAPTIVE ===
+@media (max-width: 375px) {
+  .modal__links {
+    margin-bottom: 40px;
+  }
+  .modal__link {
+    margin: 0 20px;
+  }
+}
