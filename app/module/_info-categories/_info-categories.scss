@@ -197,7 +197,7 @@
   }
   .categories__items {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
+    gap: 10px;
   }
   .categories__item {
     padding: 15px 10px;
