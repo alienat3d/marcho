@@ -1,0 +1,843 @@
+<section class="shop">
+  <div class="container">
+    <div class="shop__inner">
+    <button class="shop__filter-btn">
+      <img  class="shop__filter-btn-img" src="images/icons/filter-btn.svg">
+    </button>
+      <div class="shop__filters filter">
+
+        <div class="filter-search filter__item">
+          <h3 class="filter-search__title filter__title">
+            Search
+          </h3>
+          <form class="filter-search__form" action="#">
+            <input type="text" class="filter-search__input" placeholder="Search your keyword...">
+            <button class="filter-search__btn" type="submit">
+              <img class="filter-search__btn-img" src="images/icons/magnifying-glass-white.svg"
+                alt="magnifying glass icon">
+            </button>
+          </form>
+        </div>
+
+        <div class="filter-price filter__item">
+          <h3 class="filter-price__title filter__title">
+            Price Filter
+          </h3>
+          <form class="filter-price__form" action="#">
+            <input class="filter-price__input" type="text" data-type="double" data-min="0" data-max="999"
+              data-from="200" data-to="800">
+            <label class="filter-price__label">
+              <span>
+                Price:
+                $<span class="filter-price__from"></span> -
+                $<span class="filter-price__to"></span>
+              </span>
+              <button class="filter-price__button" type="submit">
+                Filter
+              </button>
+            </label>
+          </form>
+        </div>
+
+        <div class="filter-color filter__item">
+          <h3 class="filter-color__title filter__title">
+            Color Filter
+          </h3>
+          <form class="filter-color__form action=" #"">
+            <label class="filter-color__label">
+              <span class="filter-color__name">Blue (15)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox">
+                <span class="filter-color__checkbox filter-color__checkbox--blue"></span>
+              </div>
+            </label>
+            <label class="filter-color__label">
+              <span class="filter-color__name">Red (09)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox">
+                <span class="filter-color__checkbox filter-color__checkbox--red"></span>
+              </div>
+            </label>
+            <label class="filter-color__label">
+              <span class="filter-color__name">Green (28)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox">
+                <span class="filter-color__checkbox filter-color__checkbox--green"></span>
+              </div>
+            </label>
+            <label class="filter-color__label">
+              <span class="filter-color__name">Orange (11)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox">
+                <span class="filter-color__checkbox filter-color__checkbox--orange"></span>
+              </div>
+            </label>
+            <label class="filter-color__label">
+              <span class="filter-color__name">Black (05)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox">
+                <span class="filter-color__checkbox filter-color__checkbox--black"></span>
+              </div>
+            </label>
+            <label class="filter-color__label">
+              <span class="filter-color__name">Purple (21)</span>
+              <div class="filter-color__box">
+                <input class="filter-color__input" type="checkbox">
+                <span class="filter-color__checkbox filter-color__checkbox--purple"></span>
+              </div>
+            </label>
+          </form>
+        </div>
+
+        <div class="filter-size filter__item">
+          <h3 class="filter-size__title filter__title">
+            Size Filter
+          </h3>
+          <form class="filter-size__form" action="#">
+            <label class="filter-size__label">
+              <input class="filter-size__input" type="checkbox">
+              <span class="filter-size__checkbox"></span>
+              <span class="filter-size__name">X-Small</span>
+            </label>
+            <label class="filter-size__label">
+              <input class="filter-size__input" type="checkbox">
+              <span class="filter-size__checkbox"></span>
+              <span class="filter-size__name">Small</span>
+            </label>
+            <label class="filter-size__label">
+              <input class="filter-size__input" type="checkbox">
+              <span class="filter-size__checkbox"></span>
+              <span class="filter-size__name">Medium</span>
+            </label>
+            <label class="filter-size__label">
+              <input class="filter-size__input" type="checkbox">
+              <span class="filter-size__checkbox"></span>
+              <span class="filter-size__name">Large</span>
+            </label>
+            <label class="filter-size__label">
+              <input class="filter-size__input" type="checkbox">
+              <span class="filter-size__checkbox"></span>
+              <span class="filter-size__name">XXL</span>
+            </label>
+          </form>
+        </div>
+
+        <div class="filter-category filter__item">
+          <h3 class="filter-category__title filter__title">
+            CATEGORY
+          </h3>
+          <form class="filter-category__form">
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Woman</span>
+                <span>48</span>
+              </div>
+            </label>
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Man</span>
+                <span>30</span>
+              </div>
+            </label>
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox" checked>
+              <div class="filter-category__checkbox">
+                <span>Sale Products</span>
+                <span>92</span>
+              </div>
+            </label>
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Fashion</span>
+                <span>121</span>
+              </div>
+            </label>
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Hot Dresses</span>
+                <span>52</span>
+              </div>
+            </label>
+            <label class="filter-category__label">
+              <input class="filter-category__input" type="checkbox">
+              <div class="filter-category__checkbox">
+                <span>Accessories</span>
+                <span>88</span>
+              </div>
+            </label>
+          </form>
+        </div>
+
+        <div class="filter-tags filter__item">
+          <h3 class="filter-tags__title filter__title">
+            Popular Tags
+          </h3>
+          <form class="filter-tags__form">
+            <label class="filter-tags__label">
+              <input class="filter-tags__input" type="checkbox">
+              <span class="filter-tags__checkbox">
+                Sweatshirt
+              </span>
+            </label>
+            <label class="filter-tags__label">
+              <input class="filter-tags__input" type="checkbox">
+              <span class="filter-tags__checkbox">
+                Accessories
+              </span>
+            </label>
+            <label class="filter-tags__label">
+              <input class="filter-tags__input" type="checkbox">
+              <span class="filter-tags__checkbox">
+                Fashion
+              </span>
+            </label>
+            <label class="filter-tags__label">
+              <input class="filter-tags__input" type="checkbox">
+              <span class="filter-tags__checkbox">
+                Dress
+              </span>
+            </label>
+            <label class="filter-tags__label">
+              <input class="filter-tags__input" type="checkbox">
+              <span class="filter-tags__checkbox">
+                T-Shirt
+              </span>
+            </label>
+            <label class="filter-tags__label">
+              <input class="filter-tags__input" type="checkbox">
+              <span class="filter-tags__checkbox">
+                Jewellery
+              </span>
+            </label>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="shop-content">
+        <div class="shop-content__filter">
+          <div class="shop-content__filter-buttons">
+            <span>View</span>
+            <button class="shop-content__filter-btn shop-content__filter-btn--active button-grid">
+              <svg width="15" height="15" viewBox="0 0 15 15">
+                <g>
+                  <g>
+                    <path fill="#8d8d8d"
+                      d="M0 3.75h3.75V0H0zM5.625 15h3.75v-3.75h-3.75zM0 15h3.75v-3.75H0zm0-5.625h3.75v-3.75H0zm5.625 0h3.75v-3.75h-3.75zM11.25 0v3.75H15V0zM5.625 3.75h3.75V0h-3.75zm5.625 5.625H15v-3.75h-3.75zm0 5.625H15v-3.75h-3.75z" />
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <button class="shop-content__filter-btn button-list">
+              <svg width="20" height="15" viewBox="0 0 20 15">
+                <g>
+                  <g>
+                    <path fill="#8d8d8d"
+                      d="M.007 0h4.422v4.172H.007zm5.828 0h14.159v4.172H5.835zM.007 5.413h4.422v4.172H.007zm5.828 0h14.159v4.172H5.835zM.007 10.828h4.422v4.171H.007zm5.828 0h14.159v4.171H5.835z" />
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div class="shop-content__filter-selects">
+            <form class="shop-content__form" action="#">
+              <select class="shop-content__filter-sort-by select-styled">
+                <option value="">Sort By Default</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+              <select class="shop-content__filter-show-num select-styled">
+                <option value="">Show 9</option>
+                <option value="">Show 8</option>
+                <option value="">Show 7</option>
+                <option value="">Show 6</option>
+                <option value="">Show 5</option>
+                <option value="">Show 4</option>
+                <option value="">Show 3</option>
+                <option value="">Show 2</option>
+                <option value="">Show 1</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="shop-content__inner">
+
+          <div class="products__item product-card product-card--sale">
+            <div class="product-card__image-box">
+              <img class="product-card__image" src="images/products/womens-comfy-hoodie.jpg" alt="Women’s Comfy Hoodie">
+              <div class="product-card__link-box">
+                <a class="product-card__link product-card__link--mag-glass" href="#">
+                  <svg width="19" height="20" viewBox="0 0 19 20">
+                    <path
+                      d="M18.70865,18.21905c0.39619,0.42007 0.38452,1.08782 -0.0285,1.49057c-0.19432,0.18969 -0.44849,0.29481 -0.71663,0.29481c-0.2853,0 -0.54989,-0.11478 -0.74718,-0.32421l-4.71817,-4.99005c-1.33862,0.95894 -2.9068,1.46319 -4.55097,1.46319c-4.37885,0 -7.94186,-3.62393 -7.94186,-8.07833c0,-4.45319 3.563,-8.07672 7.94186,-8.07672c4.38091,0 7.94392,3.62353 7.94392,8.07672c0,1.90661 -0.65964,3.73791 -1.86356,5.19425zM7.9472,2.10588c-3.23582,0 -5.86945,2.67868 -5.86945,5.96914c0,3.29247 2.63363,5.97075 5.86945,5.97075c3.23742,0 5.87151,-2.67828 5.87151,-5.97075c0,-3.29046 -2.63409,-5.96914 -5.87151,-5.96914z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link product-card__link--lines" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20">
+                    <path
+                      d="M15.99862,17.29393c0.00423,0.01692 0.00423,0.03262 0.00423,0.04954c0,1.46882 -1.34457,2.66297 -2.99984,2.66297h-9.99607c-1.65504,0 -2.99961,-1.19415 -2.99961,-2.66297c0,-0.01692 0.00401,-0.03262 0.00401,-0.04954l1.14441,-12.89843c0.02449,-0.28676 0.26161,-0.50344 0.54749,-0.50344h2.35405c0.03273,-2.15189 1.78997,-3.89055 3.94775,-3.89055c2.1579,0 3.91502,1.73867 3.94787,3.89055h2.35405c0.28187,0 0.52299,0.21668 0.54749,0.50344zM8.00504,1.10626c-1.54896,0 -2.8117,1.24409 -2.84443,2.78581h5.68874c-0.0325,-1.54172 -1.29547,-2.78581 -2.84431,-2.78581zM13.00301,18.90211c1.03409,0 1.87992,-0.68749 1.89629,-1.53407l-1.09921,-12.3672h-1.84719v1.67705c0,0.30689 -0.24536,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-5.69263v1.67705c0,0.30689 -0.24525,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-1.84719l-1.09509,12.3672c0.01637,0.84658 0.85796,1.53407 1.89606,1.53407z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link" href="#">
+                  <svg width="23" height="20" viewBox="0 0 23 20">
+                    <path
+                      d="M21.32698,1.96371c1.08261,1.20865 1.67885,2.8273 1.67885,4.5575c0,1.88406 -0.74753,3.63561 -2.35233,5.51323c-1.4344,1.67866 -3.49789,3.40886 -5.8873,5.41214c-0.89058,0.7467 -1.81137,1.51876 -2.79167,2.36293l-0.02941,0.02457c-0.12714,0.10995 -0.28553,0.16472 -0.44403,0.16472c-0.1585,0 -0.31689,-0.05477 -0.44403,-0.16472l-0.02941,-0.02457c-0.9803,-0.84416 -1.90098,-1.61623 -2.79144,-2.36293c-2.38953,-2.00327 -4.45301,-3.73348 -5.88741,-5.41214c-1.60492,-1.87761 -2.35233,-3.62917 -2.35233,-5.51323c0,-1.73021 0.59612,-3.34885 1.67862,-4.5575c1.13503,-1.26705 2.70939,-1.96501 4.43321,-1.96501c2.42443,0 3.95931,1.42452 4.82014,2.61948c0.22327,0.31052 0.41313,0.62104 0.57266,0.91384c0.15953,-0.2928 0.3495,-0.60332 0.57278,-0.91384c0.86071,-1.19496 2.39571,-2.61948 4.82002,-2.61948c1.72394,0 3.2983,0.69756 4.4331,1.96501zM21.6576,6.52121c0,-1.4072 -0.47653,-2.71493 -1.34205,-3.68112c-0.87524,-0.97707 -2.09049,-1.51474 -3.42167,-1.51474c-1.84822,0 -3.0431,1.11964 -3.7199,2.05966c-0.60711,0.84295 -0.92388,1.69316 -1.03191,2.01898c-0.09041,0.27347 -0.34916,0.45793 -0.64098,0.45793c-0.29182,0 -0.55058,-0.18446 -0.64087,-0.45793c-0.10815,-0.32582 -0.42492,-1.17603 -1.03191,-2.01898c-0.67692,-0.94002 -1.87168,-2.05966 -3.72002,-2.05966c-1.33118,0 -2.54631,0.53767 -3.42167,1.51474c-0.8654,0.96619 -1.34205,2.27392 -1.34205,3.68112c0,3.40484 3.08945,5.99491 7.76596,9.91607c0.76767,0.64359 1.55766,1.30571 2.39056,2.01817c0.83302,-0.71246 1.623,-1.37498 2.39056,-2.01817c4.67651,-3.92116 7.76596,-6.51124 7.76596,-9.91607z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-card__wrapper">
+              <div class="product-card__box">
+                <div class="star-rating" data-rateyo-rating="4"></div>
+                <h4 class="product-card__title">
+                  Women’s Comfy Hoodie
+                </h4>
+                <div class="product-card__price">
+                  <span class="product-card__price-new">
+                    $35.00
+                  </span>
+                  <span class="product-card__price-old">
+                    $38.50
+                  </span>
+                </div>
+              </div>
+              <div class="product-card__content-box">
+                <p class="product-card__text">
+                  For chilling evenings or working at home, our comfy hoodie is the best outfit.
+                </p>
+                <button class="product-card__button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item product-card">
+            <div class="product-card__image-box">
+              <img class="product-card__image" src="images/products/womens-sportive-hoodie.jpg"
+                alt="Women’s Sportive Hoodie">
+              <div class="product-card__link-box">
+                <a class="product-card__link product-card__link--mag-glass" href="#">
+                  <svg width="19" height="20" viewBox="0 0 19 20">
+                    <path
+                      d="M18.70865,18.21905c0.39619,0.42007 0.38452,1.08782 -0.0285,1.49057c-0.19432,0.18969 -0.44849,0.29481 -0.71663,0.29481c-0.2853,0 -0.54989,-0.11478 -0.74718,-0.32421l-4.71817,-4.99005c-1.33862,0.95894 -2.9068,1.46319 -4.55097,1.46319c-4.37885,0 -7.94186,-3.62393 -7.94186,-8.07833c0,-4.45319 3.563,-8.07672 7.94186,-8.07672c4.38091,0 7.94392,3.62353 7.94392,8.07672c0,1.90661 -0.65964,3.73791 -1.86356,5.19425zM7.9472,2.10588c-3.23582,0 -5.86945,2.67868 -5.86945,5.96914c0,3.29247 2.63363,5.97075 5.86945,5.97075c3.23742,0 5.87151,-2.67828 5.87151,-5.97075c0,-3.29046 -2.63409,-5.96914 -5.87151,-5.96914z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link product-card__link--lines" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20">
+                    <path
+                      d="M15.99862,17.29393c0.00423,0.01692 0.00423,0.03262 0.00423,0.04954c0,1.46882 -1.34457,2.66297 -2.99984,2.66297h-9.99607c-1.65504,0 -2.99961,-1.19415 -2.99961,-2.66297c0,-0.01692 0.00401,-0.03262 0.00401,-0.04954l1.14441,-12.89843c0.02449,-0.28676 0.26161,-0.50344 0.54749,-0.50344h2.35405c0.03273,-2.15189 1.78997,-3.89055 3.94775,-3.89055c2.1579,0 3.91502,1.73867 3.94787,3.89055h2.35405c0.28187,0 0.52299,0.21668 0.54749,0.50344zM8.00504,1.10626c-1.54896,0 -2.8117,1.24409 -2.84443,2.78581h5.68874c-0.0325,-1.54172 -1.29547,-2.78581 -2.84431,-2.78581zM13.00301,18.90211c1.03409,0 1.87992,-0.68749 1.89629,-1.53407l-1.09921,-12.3672h-1.84719v1.67705c0,0.30689 -0.24536,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-5.69263v1.67705c0,0.30689 -0.24525,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-1.84719l-1.09509,12.3672c0.01637,0.84658 0.85796,1.53407 1.89606,1.53407z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link" href="#">
+                  <svg width="23" height="20" viewBox="0 0 23 20">
+                    <path
+                      d="M21.32698,1.96371c1.08261,1.20865 1.67885,2.8273 1.67885,4.5575c0,1.88406 -0.74753,3.63561 -2.35233,5.51323c-1.4344,1.67866 -3.49789,3.40886 -5.8873,5.41214c-0.89058,0.7467 -1.81137,1.51876 -2.79167,2.36293l-0.02941,0.02457c-0.12714,0.10995 -0.28553,0.16472 -0.44403,0.16472c-0.1585,0 -0.31689,-0.05477 -0.44403,-0.16472l-0.02941,-0.02457c-0.9803,-0.84416 -1.90098,-1.61623 -2.79144,-2.36293c-2.38953,-2.00327 -4.45301,-3.73348 -5.88741,-5.41214c-1.60492,-1.87761 -2.35233,-3.62917 -2.35233,-5.51323c0,-1.73021 0.59612,-3.34885 1.67862,-4.5575c1.13503,-1.26705 2.70939,-1.96501 4.43321,-1.96501c2.42443,0 3.95931,1.42452 4.82014,2.61948c0.22327,0.31052 0.41313,0.62104 0.57266,0.91384c0.15953,-0.2928 0.3495,-0.60332 0.57278,-0.91384c0.86071,-1.19496 2.39571,-2.61948 4.82002,-2.61948c1.72394,0 3.2983,0.69756 4.4331,1.96501zM21.6576,6.52121c0,-1.4072 -0.47653,-2.71493 -1.34205,-3.68112c-0.87524,-0.97707 -2.09049,-1.51474 -3.42167,-1.51474c-1.84822,0 -3.0431,1.11964 -3.7199,2.05966c-0.60711,0.84295 -0.92388,1.69316 -1.03191,2.01898c-0.09041,0.27347 -0.34916,0.45793 -0.64098,0.45793c-0.29182,0 -0.55058,-0.18446 -0.64087,-0.45793c-0.10815,-0.32582 -0.42492,-1.17603 -1.03191,-2.01898c-0.67692,-0.94002 -1.87168,-2.05966 -3.72002,-2.05966c-1.33118,0 -2.54631,0.53767 -3.42167,1.51474c-0.8654,0.96619 -1.34205,2.27392 -1.34205,3.68112c0,3.40484 3.08945,5.99491 7.76596,9.91607c0.76767,0.64359 1.55766,1.30571 2.39056,2.01817c0.83302,-0.71246 1.623,-1.37498 2.39056,-2.01817c4.67651,-3.92116 7.76596,-6.51124 7.76596,-9.91607z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-card__wrapper">
+              <div class="product-card__box">
+                <div class="star-rating" data-rateyo-rating="4.5"></div>
+                <h4 class="product-card__title">
+                  Women’s Sportive Hoodie
+                </h4>
+                <div class="product-card__price">
+                  <span class="product-card__price-new">
+                    $37.00
+                  </span>
+                  <span class="product-card__price-old">
+                    $40.00
+                  </span>
+                </div>
+              </div>
+              <div class="product-card__content-box">
+                <p class="product-card__text">
+                  If you jog or just go for a walk, with our new sportive hoodie you won’t feel cold anymore!
+                </p>
+                <button class="product-card__button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item product-card">
+            <div class="product-card__image-box">
+              <img class="product-card__image" src="images/products/womens-poofer-gilet.jpg" alt="Women’s Poofer Gilet">
+              <div class="product-card__link-box">
+                <a class="product-card__link product-card__link--mag-glass" href="#">
+                  <svg width="19" height="20" viewBox="0 0 19 20">
+                    <path
+                      d="M18.70865,18.21905c0.39619,0.42007 0.38452,1.08782 -0.0285,1.49057c-0.19432,0.18969 -0.44849,0.29481 -0.71663,0.29481c-0.2853,0 -0.54989,-0.11478 -0.74718,-0.32421l-4.71817,-4.99005c-1.33862,0.95894 -2.9068,1.46319 -4.55097,1.46319c-4.37885,0 -7.94186,-3.62393 -7.94186,-8.07833c0,-4.45319 3.563,-8.07672 7.94186,-8.07672c4.38091,0 7.94392,3.62353 7.94392,8.07672c0,1.90661 -0.65964,3.73791 -1.86356,5.19425zM7.9472,2.10588c-3.23582,0 -5.86945,2.67868 -5.86945,5.96914c0,3.29247 2.63363,5.97075 5.86945,5.97075c3.23742,0 5.87151,-2.67828 5.87151,-5.97075c0,-3.29046 -2.63409,-5.96914 -5.87151,-5.96914z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link product-card__link--lines" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20">
+                    <path
+                      d="M15.99862,17.29393c0.00423,0.01692 0.00423,0.03262 0.00423,0.04954c0,1.46882 -1.34457,2.66297 -2.99984,2.66297h-9.99607c-1.65504,0 -2.99961,-1.19415 -2.99961,-2.66297c0,-0.01692 0.00401,-0.03262 0.00401,-0.04954l1.14441,-12.89843c0.02449,-0.28676 0.26161,-0.50344 0.54749,-0.50344h2.35405c0.03273,-2.15189 1.78997,-3.89055 3.94775,-3.89055c2.1579,0 3.91502,1.73867 3.94787,3.89055h2.35405c0.28187,0 0.52299,0.21668 0.54749,0.50344zM8.00504,1.10626c-1.54896,0 -2.8117,1.24409 -2.84443,2.78581h5.68874c-0.0325,-1.54172 -1.29547,-2.78581 -2.84431,-2.78581zM13.00301,18.90211c1.03409,0 1.87992,-0.68749 1.89629,-1.53407l-1.09921,-12.3672h-1.84719v1.67705c0,0.30689 -0.24536,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-5.69263v1.67705c0,0.30689 -0.24525,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-1.84719l-1.09509,12.3672c0.01637,0.84658 0.85796,1.53407 1.89606,1.53407z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link" href="#">
+                  <svg width="23" height="20" viewBox="0 0 23 20">
+                    <path
+                      d="M21.32698,1.96371c1.08261,1.20865 1.67885,2.8273 1.67885,4.5575c0,1.88406 -0.74753,3.63561 -2.35233,5.51323c-1.4344,1.67866 -3.49789,3.40886 -5.8873,5.41214c-0.89058,0.7467 -1.81137,1.51876 -2.79167,2.36293l-0.02941,0.02457c-0.12714,0.10995 -0.28553,0.16472 -0.44403,0.16472c-0.1585,0 -0.31689,-0.05477 -0.44403,-0.16472l-0.02941,-0.02457c-0.9803,-0.84416 -1.90098,-1.61623 -2.79144,-2.36293c-2.38953,-2.00327 -4.45301,-3.73348 -5.88741,-5.41214c-1.60492,-1.87761 -2.35233,-3.62917 -2.35233,-5.51323c0,-1.73021 0.59612,-3.34885 1.67862,-4.5575c1.13503,-1.26705 2.70939,-1.96501 4.43321,-1.96501c2.42443,0 3.95931,1.42452 4.82014,2.61948c0.22327,0.31052 0.41313,0.62104 0.57266,0.91384c0.15953,-0.2928 0.3495,-0.60332 0.57278,-0.91384c0.86071,-1.19496 2.39571,-2.61948 4.82002,-2.61948c1.72394,0 3.2983,0.69756 4.4331,1.96501zM21.6576,6.52121c0,-1.4072 -0.47653,-2.71493 -1.34205,-3.68112c-0.87524,-0.97707 -2.09049,-1.51474 -3.42167,-1.51474c-1.84822,0 -3.0431,1.11964 -3.7199,2.05966c-0.60711,0.84295 -0.92388,1.69316 -1.03191,2.01898c-0.09041,0.27347 -0.34916,0.45793 -0.64098,0.45793c-0.29182,0 -0.55058,-0.18446 -0.64087,-0.45793c-0.10815,-0.32582 -0.42492,-1.17603 -1.03191,-2.01898c-0.67692,-0.94002 -1.87168,-2.05966 -3.72002,-2.05966c-1.33118,0 -2.54631,0.53767 -3.42167,1.51474c-0.8654,0.96619 -1.34205,2.27392 -1.34205,3.68112c0,3.40484 3.08945,5.99491 7.76596,9.91607c0.76767,0.64359 1.55766,1.30571 2.39056,2.01817c0.83302,-0.71246 1.623,-1.37498 2.39056,-2.01817c4.67651,-3.92116 7.76596,-6.51124 7.76596,-9.91607z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-card__wrapper">
+              <div class="product-card__box">
+                <div class="star-rating" data-rateyo-rating="3"></div>
+                <h4 class="product-card__title">
+                  Women’s Poofer Gilet
+                </h4>
+                <div class="product-card__price">
+                  <span class="product-card__price-new">
+                    $60.00
+                  </span>
+                  <span class="product-card__price-old">
+                    $66.00
+                  </span>
+                </div>
+              </div>
+              <div class="product-card__content-box">
+                <p class="product-card__text">
+                  Warm and comfortable poofer gilet is great to wear on cold rainy days for a walk.
+                </p>
+                <button class="product-card__button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item product-card product-card--sale">
+            <div class="product-card__image-box">
+              <img class="product-card__image" src="images/products/womens-beige-coat.jpg" alt="Women’s Beige Coat">
+              <div class="product-card__link-box">
+                <a class="product-card__link product-card__link--mag-glass" href="#">
+                  <svg width="19" height="20" viewBox="0 0 19 20">
+                    <path
+                      d="M18.70865,18.21905c0.39619,0.42007 0.38452,1.08782 -0.0285,1.49057c-0.19432,0.18969 -0.44849,0.29481 -0.71663,0.29481c-0.2853,0 -0.54989,-0.11478 -0.74718,-0.32421l-4.71817,-4.99005c-1.33862,0.95894 -2.9068,1.46319 -4.55097,1.46319c-4.37885,0 -7.94186,-3.62393 -7.94186,-8.07833c0,-4.45319 3.563,-8.07672 7.94186,-8.07672c4.38091,0 7.94392,3.62353 7.94392,8.07672c0,1.90661 -0.65964,3.73791 -1.86356,5.19425zM7.9472,2.10588c-3.23582,0 -5.86945,2.67868 -5.86945,5.96914c0,3.29247 2.63363,5.97075 5.86945,5.97075c3.23742,0 5.87151,-2.67828 5.87151,-5.97075c0,-3.29046 -2.63409,-5.96914 -5.87151,-5.96914z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link product-card__link--lines" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20">
+                    <path
+                      d="M15.99862,17.29393c0.00423,0.01692 0.00423,0.03262 0.00423,0.04954c0,1.46882 -1.34457,2.66297 -2.99984,2.66297h-9.99607c-1.65504,0 -2.99961,-1.19415 -2.99961,-2.66297c0,-0.01692 0.00401,-0.03262 0.00401,-0.04954l1.14441,-12.89843c0.02449,-0.28676 0.26161,-0.50344 0.54749,-0.50344h2.35405c0.03273,-2.15189 1.78997,-3.89055 3.94775,-3.89055c2.1579,0 3.91502,1.73867 3.94787,3.89055h2.35405c0.28187,0 0.52299,0.21668 0.54749,0.50344zM8.00504,1.10626c-1.54896,0 -2.8117,1.24409 -2.84443,2.78581h5.68874c-0.0325,-1.54172 -1.29547,-2.78581 -2.84431,-2.78581zM13.00301,18.90211c1.03409,0 1.87992,-0.68749 1.89629,-1.53407l-1.09921,-12.3672h-1.84719v1.67705c0,0.30689 -0.24536,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-5.69263v1.67705c0,0.30689 -0.24525,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-1.84719l-1.09509,12.3672c0.01637,0.84658 0.85796,1.53407 1.89606,1.53407z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link" href="#">
+                  <svg width="23" height="20" viewBox="0 0 23 20">
+                    <path
+                      d="M21.32698,1.96371c1.08261,1.20865 1.67885,2.8273 1.67885,4.5575c0,1.88406 -0.74753,3.63561 -2.35233,5.51323c-1.4344,1.67866 -3.49789,3.40886 -5.8873,5.41214c-0.89058,0.7467 -1.81137,1.51876 -2.79167,2.36293l-0.02941,0.02457c-0.12714,0.10995 -0.28553,0.16472 -0.44403,0.16472c-0.1585,0 -0.31689,-0.05477 -0.44403,-0.16472l-0.02941,-0.02457c-0.9803,-0.84416 -1.90098,-1.61623 -2.79144,-2.36293c-2.38953,-2.00327 -4.45301,-3.73348 -5.88741,-5.41214c-1.60492,-1.87761 -2.35233,-3.62917 -2.35233,-5.51323c0,-1.73021 0.59612,-3.34885 1.67862,-4.5575c1.13503,-1.26705 2.70939,-1.96501 4.43321,-1.96501c2.42443,0 3.95931,1.42452 4.82014,2.61948c0.22327,0.31052 0.41313,0.62104 0.57266,0.91384c0.15953,-0.2928 0.3495,-0.60332 0.57278,-0.91384c0.86071,-1.19496 2.39571,-2.61948 4.82002,-2.61948c1.72394,0 3.2983,0.69756 4.4331,1.96501zM21.6576,6.52121c0,-1.4072 -0.47653,-2.71493 -1.34205,-3.68112c-0.87524,-0.97707 -2.09049,-1.51474 -3.42167,-1.51474c-1.84822,0 -3.0431,1.11964 -3.7199,2.05966c-0.60711,0.84295 -0.92388,1.69316 -1.03191,2.01898c-0.09041,0.27347 -0.34916,0.45793 -0.64098,0.45793c-0.29182,0 -0.55058,-0.18446 -0.64087,-0.45793c-0.10815,-0.32582 -0.42492,-1.17603 -1.03191,-2.01898c-0.67692,-0.94002 -1.87168,-2.05966 -3.72002,-2.05966c-1.33118,0 -2.54631,0.53767 -3.42167,1.51474c-0.8654,0.96619 -1.34205,2.27392 -1.34205,3.68112c0,3.40484 3.08945,5.99491 7.76596,9.91607c0.76767,0.64359 1.55766,1.30571 2.39056,2.01817c0.83302,-0.71246 1.623,-1.37498 2.39056,-2.01817c4.67651,-3.92116 7.76596,-6.51124 7.76596,-9.91607z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-card__wrapper">
+              <div class="product-card__box">
+                <div class="star-rating" data-rateyo-rating="5"></div>
+                <h4 class="product-card__title">
+                  Women’s Beige Coat
+                </h4>
+                <div class="product-card__price">
+                  <span class="product-card__price-new">
+                    $70.00
+                  </span>
+                  <span class="product-card__price-old">
+                    $77.00
+                  </span>
+                </div>
+              </div>
+              <div class="product-card__content-box">
+                <p class="product-card__text">
+                  Stylish and modern coat will impress all of your friends-fashionmongers!
+                </p>
+                <button class="product-card__button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item product-card product-card--sale">
+            <div class="product-card__image-box">
+              <img class="product-card__image" src="images/products/womens-tight-longsleeve-shirt.jpg"
+                alt="Women’s Tight Longsleeve Shirt">
+              <div class="product-card__link-box">
+                <a class="product-card__link product-card__link--mag-glass" href="#">
+                  <svg width="19" height="20" viewBox="0 0 19 20">
+                    <path
+                      d="M18.70865,18.21905c0.39619,0.42007 0.38452,1.08782 -0.0285,1.49057c-0.19432,0.18969 -0.44849,0.29481 -0.71663,0.29481c-0.2853,0 -0.54989,-0.11478 -0.74718,-0.32421l-4.71817,-4.99005c-1.33862,0.95894 -2.9068,1.46319 -4.55097,1.46319c-4.37885,0 -7.94186,-3.62393 -7.94186,-8.07833c0,-4.45319 3.563,-8.07672 7.94186,-8.07672c4.38091,0 7.94392,3.62353 7.94392,8.07672c0,1.90661 -0.65964,3.73791 -1.86356,5.19425zM7.9472,2.10588c-3.23582,0 -5.86945,2.67868 -5.86945,5.96914c0,3.29247 2.63363,5.97075 5.86945,5.97075c3.23742,0 5.87151,-2.67828 5.87151,-5.97075c0,-3.29046 -2.63409,-5.96914 -5.87151,-5.96914z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link product-card__link--lines" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20">
+                    <path
+                      d="M15.99862,17.29393c0.00423,0.01692 0.00423,0.03262 0.00423,0.04954c0,1.46882 -1.34457,2.66297 -2.99984,2.66297h-9.99607c-1.65504,0 -2.99961,-1.19415 -2.99961,-2.66297c0,-0.01692 0.00401,-0.03262 0.00401,-0.04954l1.14441,-12.89843c0.02449,-0.28676 0.26161,-0.50344 0.54749,-0.50344h2.35405c0.03273,-2.15189 1.78997,-3.89055 3.94775,-3.89055c2.1579,0 3.91502,1.73867 3.94787,3.89055h2.35405c0.28187,0 0.52299,0.21668 0.54749,0.50344zM8.00504,1.10626c-1.54896,0 -2.8117,1.24409 -2.84443,2.78581h5.68874c-0.0325,-1.54172 -1.29547,-2.78581 -2.84431,-2.78581zM13.00301,18.90211c1.03409,0 1.87992,-0.68749 1.89629,-1.53407l-1.09921,-12.3672h-1.84719v1.67705c0,0.30689 -0.24536,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-5.69263v1.67705c0,0.30689 -0.24525,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-1.84719l-1.09509,12.3672c0.01637,0.84658 0.85796,1.53407 1.89606,1.53407z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link" href="#">
+                  <svg width="23" height="20" viewBox="0 0 23 20">
+                    <path
+                      d="M21.32698,1.96371c1.08261,1.20865 1.67885,2.8273 1.67885,4.5575c0,1.88406 -0.74753,3.63561 -2.35233,5.51323c-1.4344,1.67866 -3.49789,3.40886 -5.8873,5.41214c-0.89058,0.7467 -1.81137,1.51876 -2.79167,2.36293l-0.02941,0.02457c-0.12714,0.10995 -0.28553,0.16472 -0.44403,0.16472c-0.1585,0 -0.31689,-0.05477 -0.44403,-0.16472l-0.02941,-0.02457c-0.9803,-0.84416 -1.90098,-1.61623 -2.79144,-2.36293c-2.38953,-2.00327 -4.45301,-3.73348 -5.88741,-5.41214c-1.60492,-1.87761 -2.35233,-3.62917 -2.35233,-5.51323c0,-1.73021 0.59612,-3.34885 1.67862,-4.5575c1.13503,-1.26705 2.70939,-1.96501 4.43321,-1.96501c2.42443,0 3.95931,1.42452 4.82014,2.61948c0.22327,0.31052 0.41313,0.62104 0.57266,0.91384c0.15953,-0.2928 0.3495,-0.60332 0.57278,-0.91384c0.86071,-1.19496 2.39571,-2.61948 4.82002,-2.61948c1.72394,0 3.2983,0.69756 4.4331,1.96501zM21.6576,6.52121c0,-1.4072 -0.47653,-2.71493 -1.34205,-3.68112c-0.87524,-0.97707 -2.09049,-1.51474 -3.42167,-1.51474c-1.84822,0 -3.0431,1.11964 -3.7199,2.05966c-0.60711,0.84295 -0.92388,1.69316 -1.03191,2.01898c-0.09041,0.27347 -0.34916,0.45793 -0.64098,0.45793c-0.29182,0 -0.55058,-0.18446 -0.64087,-0.45793c-0.10815,-0.32582 -0.42492,-1.17603 -1.03191,-2.01898c-0.67692,-0.94002 -1.87168,-2.05966 -3.72002,-2.05966c-1.33118,0 -2.54631,0.53767 -3.42167,1.51474c-0.8654,0.96619 -1.34205,2.27392 -1.34205,3.68112c0,3.40484 3.08945,5.99491 7.76596,9.91607c0.76767,0.64359 1.55766,1.30571 2.39056,2.01817c0.83302,-0.71246 1.623,-1.37498 2.39056,-2.01817c4.67651,-3.92116 7.76596,-6.51124 7.76596,-9.91607z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-card__wrapper">
+              <div class="product-card__box">
+                <div class="star-rating" data-rateyo-rating="4.5"></div>
+                <h4 class="product-card__title">
+                  Women’s Tight Longsleeve Shirt
+                </h4>
+                <div class="product-card__price">
+                  <span class="product-card__price-new">
+                    $25.00
+                  </span>
+                  <span class="product-card__price-old">
+                    $28.00
+                  </span>
+                </div>
+              </div>
+              <div class="product-card__content-box">
+                <p class="product-card__text">
+                  Alluring long-sleeved tight-fitting shirt is great choice for any party or a date.
+                </p>
+                <button class="product-card__button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item product-card">
+            <div class="product-card__image-box">
+              <img class="product-card__image" src="images/products/flannel-dress.jpg" alt="Women’s Flannel Dress">
+              <div class="product-card__link-box">
+                <a class="product-card__link product-card__link--mag-glass" href="#">
+                  <svg width="19" height="20" viewBox="0 0 19 20">
+                    <path
+                      d="M18.70865,18.21905c0.39619,0.42007 0.38452,1.08782 -0.0285,1.49057c-0.19432,0.18969 -0.44849,0.29481 -0.71663,0.29481c-0.2853,0 -0.54989,-0.11478 -0.74718,-0.32421l-4.71817,-4.99005c-1.33862,0.95894 -2.9068,1.46319 -4.55097,1.46319c-4.37885,0 -7.94186,-3.62393 -7.94186,-8.07833c0,-4.45319 3.563,-8.07672 7.94186,-8.07672c4.38091,0 7.94392,3.62353 7.94392,8.07672c0,1.90661 -0.65964,3.73791 -1.86356,5.19425zM7.9472,2.10588c-3.23582,0 -5.86945,2.67868 -5.86945,5.96914c0,3.29247 2.63363,5.97075 5.86945,5.97075c3.23742,0 5.87151,-2.67828 5.87151,-5.97075c0,-3.29046 -2.63409,-5.96914 -5.87151,-5.96914z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link product-card__link--lines" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20">
+                    <path
+                      d="M15.99862,17.29393c0.00423,0.01692 0.00423,0.03262 0.00423,0.04954c0,1.46882 -1.34457,2.66297 -2.99984,2.66297h-9.99607c-1.65504,0 -2.99961,-1.19415 -2.99961,-2.66297c0,-0.01692 0.00401,-0.03262 0.00401,-0.04954l1.14441,-12.89843c0.02449,-0.28676 0.26161,-0.50344 0.54749,-0.50344h2.35405c0.03273,-2.15189 1.78997,-3.89055 3.94775,-3.89055c2.1579,0 3.91502,1.73867 3.94787,3.89055h2.35405c0.28187,0 0.52299,0.21668 0.54749,0.50344zM8.00504,1.10626c-1.54896,0 -2.8117,1.24409 -2.84443,2.78581h5.68874c-0.0325,-1.54172 -1.29547,-2.78581 -2.84431,-2.78581zM13.00301,18.90211c1.03409,0 1.87992,-0.68749 1.89629,-1.53407l-1.09921,-12.3672h-1.84719v1.67705c0,0.30689 -0.24536,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-5.69263v1.67705c0,0.30689 -0.24525,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-1.84719l-1.09509,12.3672c0.01637,0.84658 0.85796,1.53407 1.89606,1.53407z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link" href="#">
+                  <svg width="23" height="20" viewBox="0 0 23 20">
+                    <path
+                      d="M21.32698,1.96371c1.08261,1.20865 1.67885,2.8273 1.67885,4.5575c0,1.88406 -0.74753,3.63561 -2.35233,5.51323c-1.4344,1.67866 -3.49789,3.40886 -5.8873,5.41214c-0.89058,0.7467 -1.81137,1.51876 -2.79167,2.36293l-0.02941,0.02457c-0.12714,0.10995 -0.28553,0.16472 -0.44403,0.16472c-0.1585,0 -0.31689,-0.05477 -0.44403,-0.16472l-0.02941,-0.02457c-0.9803,-0.84416 -1.90098,-1.61623 -2.79144,-2.36293c-2.38953,-2.00327 -4.45301,-3.73348 -5.88741,-5.41214c-1.60492,-1.87761 -2.35233,-3.62917 -2.35233,-5.51323c0,-1.73021 0.59612,-3.34885 1.67862,-4.5575c1.13503,-1.26705 2.70939,-1.96501 4.43321,-1.96501c2.42443,0 3.95931,1.42452 4.82014,2.61948c0.22327,0.31052 0.41313,0.62104 0.57266,0.91384c0.15953,-0.2928 0.3495,-0.60332 0.57278,-0.91384c0.86071,-1.19496 2.39571,-2.61948 4.82002,-2.61948c1.72394,0 3.2983,0.69756 4.4331,1.96501zM21.6576,6.52121c0,-1.4072 -0.47653,-2.71493 -1.34205,-3.68112c-0.87524,-0.97707 -2.09049,-1.51474 -3.42167,-1.51474c-1.84822,0 -3.0431,1.11964 -3.7199,2.05966c-0.60711,0.84295 -0.92388,1.69316 -1.03191,2.01898c-0.09041,0.27347 -0.34916,0.45793 -0.64098,0.45793c-0.29182,0 -0.55058,-0.18446 -0.64087,-0.45793c-0.10815,-0.32582 -0.42492,-1.17603 -1.03191,-2.01898c-0.67692,-0.94002 -1.87168,-2.05966 -3.72002,-2.05966c-1.33118,0 -2.54631,0.53767 -3.42167,1.51474c-0.8654,0.96619 -1.34205,2.27392 -1.34205,3.68112c0,3.40484 3.08945,5.99491 7.76596,9.91607c0.76767,0.64359 1.55766,1.30571 2.39056,2.01817c0.83302,-0.71246 1.623,-1.37498 2.39056,-2.01817c4.67651,-3.92116 7.76596,-6.51124 7.76596,-9.91607z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-card__wrapper">
+              <div class="product-card__box">
+                <div class="star-rating" data-rateyo-rating="5"></div>
+                <h4 class="product-card__title">
+                  Women’s Flannel Dress
+                </h4>
+                <div class="product-card__price">
+                  <span class="product-card__price-new">
+                    $45.00
+                  </span>
+                  <span class="product-card__price-old">
+                    $49.50
+                  </span>
+                </div>
+              </div>
+              <div class="product-card__content-box">
+                <p class="product-card__text">
+                  Stylish and very comfy to skin flannel dress.
+                </p>
+                <button class="product-card__button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item product-card">
+            <div class="product-card__image-box">
+              <img class="product-card__image" src="images/products/high-collar-sweater.jpg"
+                alt="Women’s High Collar Sweater">
+              <div class="product-card__link-box">
+                <a class="product-card__link product-card__link--mag-glass" href="#">
+                  <svg width="19" height="20" viewBox="0 0 19 20">
+                    <path
+                      d="M18.70865,18.21905c0.39619,0.42007 0.38452,1.08782 -0.0285,1.49057c-0.19432,0.18969 -0.44849,0.29481 -0.71663,0.29481c-0.2853,0 -0.54989,-0.11478 -0.74718,-0.32421l-4.71817,-4.99005c-1.33862,0.95894 -2.9068,1.46319 -4.55097,1.46319c-4.37885,0 -7.94186,-3.62393 -7.94186,-8.07833c0,-4.45319 3.563,-8.07672 7.94186,-8.07672c4.38091,0 7.94392,3.62353 7.94392,8.07672c0,1.90661 -0.65964,3.73791 -1.86356,5.19425zM7.9472,2.10588c-3.23582,0 -5.86945,2.67868 -5.86945,5.96914c0,3.29247 2.63363,5.97075 5.86945,5.97075c3.23742,0 5.87151,-2.67828 5.87151,-5.97075c0,-3.29046 -2.63409,-5.96914 -5.87151,-5.96914z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link product-card__link--lines" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20">
+                    <path
+                      d="M15.99862,17.29393c0.00423,0.01692 0.00423,0.03262 0.00423,0.04954c0,1.46882 -1.34457,2.66297 -2.99984,2.66297h-9.99607c-1.65504,0 -2.99961,-1.19415 -2.99961,-2.66297c0,-0.01692 0.00401,-0.03262 0.00401,-0.04954l1.14441,-12.89843c0.02449,-0.28676 0.26161,-0.50344 0.54749,-0.50344h2.35405c0.03273,-2.15189 1.78997,-3.89055 3.94775,-3.89055c2.1579,0 3.91502,1.73867 3.94787,3.89055h2.35405c0.28187,0 0.52299,0.21668 0.54749,0.50344zM8.00504,1.10626c-1.54896,0 -2.8117,1.24409 -2.84443,2.78581h5.68874c-0.0325,-1.54172 -1.29547,-2.78581 -2.84431,-2.78581zM13.00301,18.90211c1.03409,0 1.87992,-0.68749 1.89629,-1.53407l-1.09921,-12.3672h-1.84719v1.67705c0,0.30689 -0.24536,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-5.69263v1.67705c0,0.30689 -0.24525,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-1.84719l-1.09509,12.3672c0.01637,0.84658 0.85796,1.53407 1.89606,1.53407z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link" href="#">
+                  <svg width="23" height="20" viewBox="0 0 23 20">
+                    <path
+                      d="M21.32698,1.96371c1.08261,1.20865 1.67885,2.8273 1.67885,4.5575c0,1.88406 -0.74753,3.63561 -2.35233,5.51323c-1.4344,1.67866 -3.49789,3.40886 -5.8873,5.41214c-0.89058,0.7467 -1.81137,1.51876 -2.79167,2.36293l-0.02941,0.02457c-0.12714,0.10995 -0.28553,0.16472 -0.44403,0.16472c-0.1585,0 -0.31689,-0.05477 -0.44403,-0.16472l-0.02941,-0.02457c-0.9803,-0.84416 -1.90098,-1.61623 -2.79144,-2.36293c-2.38953,-2.00327 -4.45301,-3.73348 -5.88741,-5.41214c-1.60492,-1.87761 -2.35233,-3.62917 -2.35233,-5.51323c0,-1.73021 0.59612,-3.34885 1.67862,-4.5575c1.13503,-1.26705 2.70939,-1.96501 4.43321,-1.96501c2.42443,0 3.95931,1.42452 4.82014,2.61948c0.22327,0.31052 0.41313,0.62104 0.57266,0.91384c0.15953,-0.2928 0.3495,-0.60332 0.57278,-0.91384c0.86071,-1.19496 2.39571,-2.61948 4.82002,-2.61948c1.72394,0 3.2983,0.69756 4.4331,1.96501zM21.6576,6.52121c0,-1.4072 -0.47653,-2.71493 -1.34205,-3.68112c-0.87524,-0.97707 -2.09049,-1.51474 -3.42167,-1.51474c-1.84822,0 -3.0431,1.11964 -3.7199,2.05966c-0.60711,0.84295 -0.92388,1.69316 -1.03191,2.01898c-0.09041,0.27347 -0.34916,0.45793 -0.64098,0.45793c-0.29182,0 -0.55058,-0.18446 -0.64087,-0.45793c-0.10815,-0.32582 -0.42492,-1.17603 -1.03191,-2.01898c-0.67692,-0.94002 -1.87168,-2.05966 -3.72002,-2.05966c-1.33118,0 -2.54631,0.53767 -3.42167,1.51474c-0.8654,0.96619 -1.34205,2.27392 -1.34205,3.68112c0,3.40484 3.08945,5.99491 7.76596,9.91607c0.76767,0.64359 1.55766,1.30571 2.39056,2.01817c0.83302,-0.71246 1.623,-1.37498 2.39056,-2.01817c4.67651,-3.92116 7.76596,-6.51124 7.76596,-9.91607z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-card__wrapper">
+              <div class="product-card__box">
+                <div class="star-rating" data-rateyo-rating="3.5"></div>
+                <h4 class="product-card__title">
+                  Women’s High Collar Sweater
+                </h4>
+                <div class="product-card__price">
+                  <span class="product-card__price-new">
+                    $30.00
+                  </span>
+                  <span class="product-card__price-old">
+                    $33.00
+                  </span>
+                </div>
+              </div>
+              <div class="product-card__content-box">
+                <p class="product-card__text">
+                  Modern netlike sweater with a high collar is just a perfect choice for a summer evenings.
+                </p>
+                <button class="product-card__button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item product-card product-card--sale">
+            <div class="product-card__image-box">
+              <img class="product-card__image" src="images/products/summer-light-dress.jpg"
+                alt="Women’s Silk Summer Dress">
+              <div class="product-card__link-box">
+                <a class="product-card__link product-card__link--mag-glass" href="#">
+                  <svg width="19" height="20" viewBox="0 0 19 20">
+                    <path
+                      d="M18.70865,18.21905c0.39619,0.42007 0.38452,1.08782 -0.0285,1.49057c-0.19432,0.18969 -0.44849,0.29481 -0.71663,0.29481c-0.2853,0 -0.54989,-0.11478 -0.74718,-0.32421l-4.71817,-4.99005c-1.33862,0.95894 -2.9068,1.46319 -4.55097,1.46319c-4.37885,0 -7.94186,-3.62393 -7.94186,-8.07833c0,-4.45319 3.563,-8.07672 7.94186,-8.07672c4.38091,0 7.94392,3.62353 7.94392,8.07672c0,1.90661 -0.65964,3.73791 -1.86356,5.19425zM7.9472,2.10588c-3.23582,0 -5.86945,2.67868 -5.86945,5.96914c0,3.29247 2.63363,5.97075 5.86945,5.97075c3.23742,0 5.87151,-2.67828 5.87151,-5.97075c0,-3.29046 -2.63409,-5.96914 -5.87151,-5.96914z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link product-card__link--lines" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20">
+                    <path
+                      d="M15.99862,17.29393c0.00423,0.01692 0.00423,0.03262 0.00423,0.04954c0,1.46882 -1.34457,2.66297 -2.99984,2.66297h-9.99607c-1.65504,0 -2.99961,-1.19415 -2.99961,-2.66297c0,-0.01692 0.00401,-0.03262 0.00401,-0.04954l1.14441,-12.89843c0.02449,-0.28676 0.26161,-0.50344 0.54749,-0.50344h2.35405c0.03273,-2.15189 1.78997,-3.89055 3.94775,-3.89055c2.1579,0 3.91502,1.73867 3.94787,3.89055h2.35405c0.28187,0 0.52299,0.21668 0.54749,0.50344zM8.00504,1.10626c-1.54896,0 -2.8117,1.24409 -2.84443,2.78581h5.68874c-0.0325,-1.54172 -1.29547,-2.78581 -2.84431,-2.78581zM13.00301,18.90211c1.03409,0 1.87992,-0.68749 1.89629,-1.53407l-1.09921,-12.3672h-1.84719v1.67705c0,0.30689 -0.24536,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-5.69263v1.67705c0,0.30689 -0.24525,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-1.84719l-1.09509,12.3672c0.01637,0.84658 0.85796,1.53407 1.89606,1.53407z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link" href="#">
+                  <svg width="23" height="20" viewBox="0 0 23 20">
+                    <path
+                      d="M21.32698,1.96371c1.08261,1.20865 1.67885,2.8273 1.67885,4.5575c0,1.88406 -0.74753,3.63561 -2.35233,5.51323c-1.4344,1.67866 -3.49789,3.40886 -5.8873,5.41214c-0.89058,0.7467 -1.81137,1.51876 -2.79167,2.36293l-0.02941,0.02457c-0.12714,0.10995 -0.28553,0.16472 -0.44403,0.16472c-0.1585,0 -0.31689,-0.05477 -0.44403,-0.16472l-0.02941,-0.02457c-0.9803,-0.84416 -1.90098,-1.61623 -2.79144,-2.36293c-2.38953,-2.00327 -4.45301,-3.73348 -5.88741,-5.41214c-1.60492,-1.87761 -2.35233,-3.62917 -2.35233,-5.51323c0,-1.73021 0.59612,-3.34885 1.67862,-4.5575c1.13503,-1.26705 2.70939,-1.96501 4.43321,-1.96501c2.42443,0 3.95931,1.42452 4.82014,2.61948c0.22327,0.31052 0.41313,0.62104 0.57266,0.91384c0.15953,-0.2928 0.3495,-0.60332 0.57278,-0.91384c0.86071,-1.19496 2.39571,-2.61948 4.82002,-2.61948c1.72394,0 3.2983,0.69756 4.4331,1.96501zM21.6576,6.52121c0,-1.4072 -0.47653,-2.71493 -1.34205,-3.68112c-0.87524,-0.97707 -2.09049,-1.51474 -3.42167,-1.51474c-1.84822,0 -3.0431,1.11964 -3.7199,2.05966c-0.60711,0.84295 -0.92388,1.69316 -1.03191,2.01898c-0.09041,0.27347 -0.34916,0.45793 -0.64098,0.45793c-0.29182,0 -0.55058,-0.18446 -0.64087,-0.45793c-0.10815,-0.32582 -0.42492,-1.17603 -1.03191,-2.01898c-0.67692,-0.94002 -1.87168,-2.05966 -3.72002,-2.05966c-1.33118,0 -2.54631,0.53767 -3.42167,1.51474c-0.8654,0.96619 -1.34205,2.27392 -1.34205,3.68112c0,3.40484 3.08945,5.99491 7.76596,9.91607c0.76767,0.64359 1.55766,1.30571 2.39056,2.01817c0.83302,-0.71246 1.623,-1.37498 2.39056,-2.01817c4.67651,-3.92116 7.76596,-6.51124 7.76596,-9.91607z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-card__wrapper">
+              <div class="product-card__box">
+                <div class="star-rating" data-rateyo-rating="2.5"></div>
+                <h4 class="product-card__title">
+                  Women’s Silk Summer Dress
+                </h4>
+                <div class="product-card__price">
+                  <span class="product-card__price-new">
+                    $30.00
+                  </span>
+                  <span class="product-card__price-old">
+                    $33.00
+                  </span>
+                </div>
+              </div>
+              <div class="product-card__content-box">
+                <p class="product-card__text">
+                  Made of silk, super light-weight summer dress. You gonna love it.
+                </p>
+                <button class="product-card__button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item product-card">
+            <div class="product-card__image-box">
+              <img class="product-card__image" src="images/products/sweater.jpg" alt="Women’s Basic Sweater">
+              <div class="product-card__link-box">
+                <a class="product-card__link product-card__link--mag-glass" href="#">
+                  <svg width="19" height="20" viewBox="0 0 19 20">
+                    <path
+                      d="M18.70865,18.21905c0.39619,0.42007 0.38452,1.08782 -0.0285,1.49057c-0.19432,0.18969 -0.44849,0.29481 -0.71663,0.29481c-0.2853,0 -0.54989,-0.11478 -0.74718,-0.32421l-4.71817,-4.99005c-1.33862,0.95894 -2.9068,1.46319 -4.55097,1.46319c-4.37885,0 -7.94186,-3.62393 -7.94186,-8.07833c0,-4.45319 3.563,-8.07672 7.94186,-8.07672c4.38091,0 7.94392,3.62353 7.94392,8.07672c0,1.90661 -0.65964,3.73791 -1.86356,5.19425zM7.9472,2.10588c-3.23582,0 -5.86945,2.67868 -5.86945,5.96914c0,3.29247 2.63363,5.97075 5.86945,5.97075c3.23742,0 5.87151,-2.67828 5.87151,-5.97075c0,-3.29046 -2.63409,-5.96914 -5.87151,-5.96914z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link product-card__link--lines" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20">
+                    <path
+                      d="M15.99862,17.29393c0.00423,0.01692 0.00423,0.03262 0.00423,0.04954c0,1.46882 -1.34457,2.66297 -2.99984,2.66297h-9.99607c-1.65504,0 -2.99961,-1.19415 -2.99961,-2.66297c0,-0.01692 0.00401,-0.03262 0.00401,-0.04954l1.14441,-12.89843c0.02449,-0.28676 0.26161,-0.50344 0.54749,-0.50344h2.35405c0.03273,-2.15189 1.78997,-3.89055 3.94775,-3.89055c2.1579,0 3.91502,1.73867 3.94787,3.89055h2.35405c0.28187,0 0.52299,0.21668 0.54749,0.50344zM8.00504,1.10626c-1.54896,0 -2.8117,1.24409 -2.84443,2.78581h5.68874c-0.0325,-1.54172 -1.29547,-2.78581 -2.84431,-2.78581zM13.00301,18.90211c1.03409,0 1.87992,-0.68749 1.89629,-1.53407l-1.09921,-12.3672h-1.84719v1.67705c0,0.30689 -0.24536,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-5.69263v1.67705c0,0.30689 -0.24525,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-1.84719l-1.09509,12.3672c0.01637,0.84658 0.85796,1.53407 1.89606,1.53407z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link" href="#">
+                  <svg width="23" height="20" viewBox="0 0 23 20">
+                    <path
+                      d="M21.32698,1.96371c1.08261,1.20865 1.67885,2.8273 1.67885,4.5575c0,1.88406 -0.74753,3.63561 -2.35233,5.51323c-1.4344,1.67866 -3.49789,3.40886 -5.8873,5.41214c-0.89058,0.7467 -1.81137,1.51876 -2.79167,2.36293l-0.02941,0.02457c-0.12714,0.10995 -0.28553,0.16472 -0.44403,0.16472c-0.1585,0 -0.31689,-0.05477 -0.44403,-0.16472l-0.02941,-0.02457c-0.9803,-0.84416 -1.90098,-1.61623 -2.79144,-2.36293c-2.38953,-2.00327 -4.45301,-3.73348 -5.88741,-5.41214c-1.60492,-1.87761 -2.35233,-3.62917 -2.35233,-5.51323c0,-1.73021 0.59612,-3.34885 1.67862,-4.5575c1.13503,-1.26705 2.70939,-1.96501 4.43321,-1.96501c2.42443,0 3.95931,1.42452 4.82014,2.61948c0.22327,0.31052 0.41313,0.62104 0.57266,0.91384c0.15953,-0.2928 0.3495,-0.60332 0.57278,-0.91384c0.86071,-1.19496 2.39571,-2.61948 4.82002,-2.61948c1.72394,0 3.2983,0.69756 4.4331,1.96501zM21.6576,6.52121c0,-1.4072 -0.47653,-2.71493 -1.34205,-3.68112c-0.87524,-0.97707 -2.09049,-1.51474 -3.42167,-1.51474c-1.84822,0 -3.0431,1.11964 -3.7199,2.05966c-0.60711,0.84295 -0.92388,1.69316 -1.03191,2.01898c-0.09041,0.27347 -0.34916,0.45793 -0.64098,0.45793c-0.29182,0 -0.55058,-0.18446 -0.64087,-0.45793c-0.10815,-0.32582 -0.42492,-1.17603 -1.03191,-2.01898c-0.67692,-0.94002 -1.87168,-2.05966 -3.72002,-2.05966c-1.33118,0 -2.54631,0.53767 -3.42167,1.51474c-0.8654,0.96619 -1.34205,2.27392 -1.34205,3.68112c0,3.40484 3.08945,5.99491 7.76596,9.91607c0.76767,0.64359 1.55766,1.30571 2.39056,2.01817c0.83302,-0.71246 1.623,-1.37498 2.39056,-2.01817c4.67651,-3.92116 7.76596,-6.51124 7.76596,-9.91607z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-card__wrapper">
+              <div class="product-card__box">
+                <div class="star-rating" data-rateyo-rating="4"></div>
+                <h4 class="product-card__title">
+                  Women’s Basic Sweater
+                </h4>
+                <div class="product-card__price">
+                  <span class="product-card__price-new">
+                    $20.00
+                  </span>
+                  <span class="product-card__price-old">
+                    $22.00
+                  </span>
+                </div>
+              </div>
+              <div class="product-card__content-box">
+                <p class="product-card__text">
+                  Classic, that never gets old! Cozy yet warm sweater for everyday.
+                </p>
+                <button class="product-card__button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products__item product-card product-card--sale">
+            <div class="product-card__image-box">
+              <img class="product-card__image" src="images/products/lacy-blouse.jpg" alt="Women’s Lacy Blouse">
+              <div class="product-card__link-box">
+                <a class="product-card__link product-card__link--mag-glass" href="#">
+                  <svg width="19" height="20" viewBox="0 0 19 20">
+                    <path
+                      d="M18.70865,18.21905c0.39619,0.42007 0.38452,1.08782 -0.0285,1.49057c-0.19432,0.18969 -0.44849,0.29481 -0.71663,0.29481c-0.2853,0 -0.54989,-0.11478 -0.74718,-0.32421l-4.71817,-4.99005c-1.33862,0.95894 -2.9068,1.46319 -4.55097,1.46319c-4.37885,0 -7.94186,-3.62393 -7.94186,-8.07833c0,-4.45319 3.563,-8.07672 7.94186,-8.07672c4.38091,0 7.94392,3.62353 7.94392,8.07672c0,1.90661 -0.65964,3.73791 -1.86356,5.19425zM7.9472,2.10588c-3.23582,0 -5.86945,2.67868 -5.86945,5.96914c0,3.29247 2.63363,5.97075 5.86945,5.97075c3.23742,0 5.87151,-2.67828 5.87151,-5.97075c0,-3.29046 -2.63409,-5.96914 -5.87151,-5.96914z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link product-card__link--lines" href="#">
+                  <svg width="16" height="20" viewBox="0 0 16 20">
+                    <path
+                      d="M15.99862,17.29393c0.00423,0.01692 0.00423,0.03262 0.00423,0.04954c0,1.46882 -1.34457,2.66297 -2.99984,2.66297h-9.99607c-1.65504,0 -2.99961,-1.19415 -2.99961,-2.66297c0,-0.01692 0.00401,-0.03262 0.00401,-0.04954l1.14441,-12.89843c0.02449,-0.28676 0.26161,-0.50344 0.54749,-0.50344h2.35405c0.03273,-2.15189 1.78997,-3.89055 3.94775,-3.89055c2.1579,0 3.91502,1.73867 3.94787,3.89055h2.35405c0.28187,0 0.52299,0.21668 0.54749,0.50344zM8.00504,1.10626c-1.54896,0 -2.8117,1.24409 -2.84443,2.78581h5.68874c-0.0325,-1.54172 -1.29547,-2.78581 -2.84431,-2.78581zM13.00301,18.90211c1.03409,0 1.87992,-0.68749 1.89629,-1.53407l-1.09921,-12.3672h-1.84719v1.67705c0,0.30689 -0.24536,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-5.69263v1.67705c0,0.30689 -0.24525,0.55257 -0.55183,0.55257c-0.30647,0 -0.55172,-0.24568 -0.55172,-0.55257v-1.67705h-1.84719l-1.09509,12.3672c0.01637,0.84658 0.85796,1.53407 1.89606,1.53407z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+                <a class="product-card__link" href="#">
+                  <svg width="23" height="20" viewBox="0 0 23 20">
+                    <path
+                      d="M21.32698,1.96371c1.08261,1.20865 1.67885,2.8273 1.67885,4.5575c0,1.88406 -0.74753,3.63561 -2.35233,5.51323c-1.4344,1.67866 -3.49789,3.40886 -5.8873,5.41214c-0.89058,0.7467 -1.81137,1.51876 -2.79167,2.36293l-0.02941,0.02457c-0.12714,0.10995 -0.28553,0.16472 -0.44403,0.16472c-0.1585,0 -0.31689,-0.05477 -0.44403,-0.16472l-0.02941,-0.02457c-0.9803,-0.84416 -1.90098,-1.61623 -2.79144,-2.36293c-2.38953,-2.00327 -4.45301,-3.73348 -5.88741,-5.41214c-1.60492,-1.87761 -2.35233,-3.62917 -2.35233,-5.51323c0,-1.73021 0.59612,-3.34885 1.67862,-4.5575c1.13503,-1.26705 2.70939,-1.96501 4.43321,-1.96501c2.42443,0 3.95931,1.42452 4.82014,2.61948c0.22327,0.31052 0.41313,0.62104 0.57266,0.91384c0.15953,-0.2928 0.3495,-0.60332 0.57278,-0.91384c0.86071,-1.19496 2.39571,-2.61948 4.82002,-2.61948c1.72394,0 3.2983,0.69756 4.4331,1.96501zM21.6576,6.52121c0,-1.4072 -0.47653,-2.71493 -1.34205,-3.68112c-0.87524,-0.97707 -2.09049,-1.51474 -3.42167,-1.51474c-1.84822,0 -3.0431,1.11964 -3.7199,2.05966c-0.60711,0.84295 -0.92388,1.69316 -1.03191,2.01898c-0.09041,0.27347 -0.34916,0.45793 -0.64098,0.45793c-0.29182,0 -0.55058,-0.18446 -0.64087,-0.45793c-0.10815,-0.32582 -0.42492,-1.17603 -1.03191,-2.01898c-0.67692,-0.94002 -1.87168,-2.05966 -3.72002,-2.05966c-1.33118,0 -2.54631,0.53767 -3.42167,1.51474c-0.8654,0.96619 -1.34205,2.27392 -1.34205,3.68112c0,3.40484 3.08945,5.99491 7.76596,9.91607c0.76767,0.64359 1.55766,1.30571 2.39056,2.01817c0.83302,-0.71246 1.623,-1.37498 2.39056,-2.01817c4.67651,-3.92116 7.76596,-6.51124 7.76596,-9.91607z"
+                      fill="#29282d"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-card__wrapper">
+              <div class="product-card__box">
+                <div class="star-rating" data-rateyo-rating="2.5"></div>
+                <h4 class="product-card__title">
+                  Women’s Lacy Blouse
+                </h4>
+                <div class="product-card__price">
+                  <span class="product-card__price-new">
+                    $55.00
+                  </span>
+                  <span class="product-card__price-old">
+                    $62.00
+                  </span>
+                </div>
+              </div>
+              <div class="product-card__content-box">
+                <p class="product-card__text">
+                  For business lunch or for a date, this blouse will impress everybody!
+                </p>
+                <button class="product-card__button">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="pagination">
+          <a class="pagination__prev pagination__arrows" href="#">
+            PREVIOUS
+          </a>
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">
+                1
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">
+                2
+              </a>
+            </li>
+            <li class="pagination__item">
+              <span class="pagination__link  pagination__link--active" href="#">
+                3
+              </span>
+            </li>
+            <li class="pagination__item">
+              <span class="pagination__link">
+                ...
+              </span>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">
+                10
+              </a>
+            </li>
+          </ul>
+          <a class="pagination__next  pagination__arrows" href="#">
+            NEXT
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

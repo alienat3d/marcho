@@ -25,6 +25,11 @@
   &__label {
     display: block;
     margin-bottom: 40px;
+
+    &--checkbox,
+    &--checkbox input {
+      cursor: pointer;
+    }
   }
 
   &__input {
@@ -42,7 +47,7 @@
 
   &__button {
     display: block;
-    margin-top: -34px;
+    margin-top: -15px;
     border: none;
     padding: 24px 0;
     width: 100%;

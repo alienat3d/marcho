@@ -24,6 +24,14 @@
     background-size: cover;
   }
 
+  &__button-icon {
+    transition: $transition-regular;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
   &__content {
     padding: 70px 0;
     max-width: 570px;

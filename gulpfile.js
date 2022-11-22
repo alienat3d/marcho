@@ -20,7 +20,7 @@ function browsersync() {
 }
 
 function nunjucks() {
-  return src('app/*.njk')
+  return src('app/**/*.njk')
     .pipe(nunjucksRender())
     .pipe(dest('app'))
     .pipe(browserSync.stream());
@@ -86,7 +86,7 @@ function cleanDist() {
 
 function watching() {
   watch(['app/**/*.scss'], styles);
-  watch(['app/*.njk'], nunjucks);
+  watch(['app/**/*.njk'], nunjucks);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/**/*.html']).on('change', browserSync.reload);
 }

@@ -1,0 +1,38 @@
+// === RELATED ===
+.related {
+  padding: 45px 0 120px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+
+    .product-card__image-box {
+      margin-bottom: 20px;
+      height: auto;
+    }
+
+    .product-card__title {
+      margin: 11px 0 3px;
+    }
+  }
+}
+// === / RELATED ===
+
+// === @ ADAPTIVE @ ===
+@media (max-width: 860px) {
+  .related__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+// === //
+
+@media (max-width: 450px) {
+  .related__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -308,6 +308,7 @@ a {
 // === BREADCRUMBS ===
 .breadcrumbs {
   display: inline-flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-left: 24px;
   position: relative;

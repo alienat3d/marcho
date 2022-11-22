@@ -6,6 +6,12 @@ $(function () {
   });
   // === / BURGER MENU ===
 
+  // === FILTER BTN ===
+  $('.shop__filter-btn').on('click', function () {
+    $('.shop__filters').slideToggle();
+  });
+  // === / FILTER BTN ===
+
   // === FOOTER SLIDE-OUT NAV ===
   $('.footer-top__title').on('click', function () {
     $(this).next().slideToggle();
@@ -18,7 +24,7 @@ $(function () {
     dots: true,
     arrows: false,
     fade: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
   });
   // === / SLICK SLIDER PLUGIN ===
@@ -66,6 +72,14 @@ $(function () {
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1051,
+        settings: {
+          draggable: true,
+        },
+      },
+    ],
   });
   // === / [PRODUCT-PAGE] 2XSLIDER JQ ===
 
@@ -92,10 +106,12 @@ $(function () {
 
   $('.button-list').on('click', function () {
     $('.product-card').addClass('product-card--list');
+    $('.shop-content__inner').addClass('shop-content__inner--no-grid');
   });
 
   $('.button-grid').on('click', function () {
     $('.product-card').removeClass('product-card--list');
+    $('.shop-content__inner').removeClass('shop-content__inner--no-grid');
   });
   // === / LIST FILTER JQ ===
 
