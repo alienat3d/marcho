@@ -1,14 +1,14 @@
 const { src, dest, watch, parallel, series } = require('gulp');
 
-const scss = require('gulp-sass');
-const concat = require('gulp-concat');
-const autoprefixer = require('gulp-autoprefixer');
-const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
-const rename = require('gulp-rename');
-const nunjucksRender = require('gulp-nunjucks-render');
-const del = require('del');
-const browserSync = require('browser-sync').create();
+const scss = require('gulp-sass')(require('sass')),
+  concat = require('gulp-concat'),
+  autoprefixer = require('gulp-autoprefixer'),
+  uglify = require('gulp-uglify'),
+  imagemin = require('gulp-imagemin'),
+  rename = require('gulp-rename'),
+  nunjucksRender = require('gulp-nunjucks-render'),
+  del = require('del'),
+  browserSync = require('browser-sync').create();
 
 function browsersync() {
   browserSync.init({
