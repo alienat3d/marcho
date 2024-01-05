@@ -4,16 +4,16 @@
   <img src="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho-small.jpg" align="center" />
 </a>
 
-## <a href="https://alienat3d.github.io/marcho/" target="_blank">Click to see :computer: <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a>
+## <a href="https://alienat3d.github.io/marcho/" target="_blank" align="center">Click to see :computer: <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a>
 
 ## Technologies used:
-* <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5" />
+* <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff" />
 * <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3" />
-* <img src="https://img.shields.io/badge/SCSS-CC6699?logo=sass" />
-* <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript" />
+* <img src="https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=fff" />
+* <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=fff" />
 * <img src="https://img.shields.io/badge/jQuery-0769AD?logo=jquery" />
 * <img src="https://img.shields.io/badge/NPM-CB3837?logo=npm" />
-* <img src="https://img.shields.io/badge/Gulp-CF4647?logo=gulp" />
+* <img src="https://img.shields.io/badge/Gulp-CF4647?logo=gulp&logoColor=fff" />
 
 ## NPM-packages that are used for development:
 
