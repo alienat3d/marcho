@@ -23,6 +23,7 @@
 * <a href="https://www.npmjs.com/package/gulp-uglify" target="_blank"><img src="https://img.shields.io/badge/Gulp%20UglyfyJS3-slategray" /></a>
 * <a href="https://www.npmjs.com/package/gulp-imagemin" target="_blank"><img src="https://img.shields.io/badge/Gulp%20ImageMin-slategray" /></a>
 * <a href="https://browsersync.io/" target="_blank"><img src="https://img.shields.io/badge/BrowserSync-slategray" /></a>
+* <a href="https://browsersync.io/" target="_blank"><img src="https://img.shields.io/badge/BrowserSync-slategray.svg?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNDAgMjA0LjEiIGZpbGw9IiNmZmYiPjxwYXRoIGQ9Ik02My41LjMgMS43IDMxLjJBMyAzIDAgMCAwIDAgMzMuOXYxMzYuM2EzIDMgMCAwIDAgMS43IDIuN2w2MS44IDMwLjlhMyAzIDAgMCAwIDQuMy0yLjdWM0EzIDMgMCAwIDAgNjMuNS4zem0xMyAyMDMuNSA2MS44LTMwLjlhMyAzIDAgMCAwIDEuNy0yLjd2LTY2LjNhMyAzIDAgMCAwLTEuNy0yLjdMNzYuNSA3MC4zYTMgMyAwIDAgMC00LjMgMi43djEyOC4xYTMgMyAwIDAgMCA0LjMgMi43eiIvPjwvc3ZnPg==" /></a>
 
 ## JS & jQuery libraries that are used for functionality:
 
