@@ -27,6 +27,6 @@
 ## JS & jQuery libraries used for functionality:
 
 * <a href="https://fancyapps.com/fancybox/" target="_blank"><img src="https://img.shields.io/badge/FancyBox-JS-F7DF1E" /></a>
-* <a href="http://kenwheeler.github.io/slick/" target="_blank"><img src="https://img.shields.io/badge/Slick%20Carousel-jQeury-0769AD" /></a>
-* <a href="https://rateyo.fundoocode.ninja/" target="_blank"><img src="https://img.shields.io/badge/RateYo-jQeury-0769AD" /></a>
-* <a href="https://dimox.name/jquery-form-styler/" target="_blank"><img src="https://img.shields.io/badge/Form%20Styler-jQeury-0769AD" /></a>
+* <a href="http://kenwheeler.github.io/slick/" target="_blank"><img src="https://img.shields.io/badge/Slick%20Carousel-jQuery-0769AD" /></a>
+* <a href="https://rateyo.fundoocode.ninja/" target="_blank"><img src="https://img.shields.io/badge/RateYo-jQuery-0769AD" /></a>
+* <a href="https://dimox.name/jquery-form-styler/" target="_blank"><img src="https://img.shields.io/badge/Form%20Styler-jQuery-0769AD" /></a>
