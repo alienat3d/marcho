@@ -1,9 +1,10 @@
 ﻿<h1>« Marcho »</h1>
 > Online store and blog for stylish women's clothing.
+&nbsp;
 <a href="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho.jpg" target="_blank">
   <img src="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho-small.jpg" align="center" />
 </a>
-
+&nbsp;
 <div align="center"><a href="https://alienat3d.github.io/marcho/" target="_blank"><img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a></div>
 
 ## Technologies used:
