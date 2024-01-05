@@ -101,4 +101,4 @@ exports.cleanDist = cleanDist;
 
 exports.default = parallel(nunjucks, styles, scripts, browsersync, watching);
 
-exports.build = series(cleanDist, styles, scripts, images, build);
+exports.build = series(cleanDist, nunjucks, styles, scripts, images, build);
