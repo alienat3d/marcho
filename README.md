@@ -5,7 +5,7 @@
   <img src="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho-small.jpg" align="center" />
 </a>
 &nbsp;
-<div align="center"><a href="https://alienat3d.github.io/marcho/" target="_blank"><img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a></div>
+<div align="center"><a href="https://alienat3d.github.io/marcho/" target="_blank">Click to see :computer: <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a></div>
 
 ## Technologies used:
 
