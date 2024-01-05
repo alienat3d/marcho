@@ -29,7 +29,7 @@
 * <a href="https://www.npmjs.com/package/gulp-uglify" target="_blank"><img src="https://img.shields.io/badge/Gulp%20UglyfyJS3-slategray" /></a>
 * <a href="https://www.npmjs.com/package/gulp-imagemin" target="_blank"><img src="https://img.shields.io/badge/Gulp%20ImageMin-slategray" /></a>
 * <a href="https://browsersync.io/" target="_blank"><img src="https://img.shields.io/badge/BrowserSync-slategray" /></a>
-
-* <a href="http://kenwheeler.github.io/slick/" target="_blank"><img src="https://img.shields.io/badge/SlickCarousel-F6C915" /></a>
-* <a href="https://rateyo.fundoocode.ninja/" target="_blank"><img src="https://img.shields.io/badge/RateYo-F6C915" /></a>
-* <a href="https://fancyapps.com/fancybox/" target="_blank"><img src="https://img.shields.io/badge/FancyBox-F6C915" /></a>
+===
+* <a href="https://fancyapps.com/fancybox/" target="_blank"><img src="https://img.shields.io/badge/F7DF1E%20(JS)-0769AD" /></a>
+* <a href="http://kenwheeler.github.io/slick/" target="_blank"><img src="https://img.shields.io/badge/SlickCarousel%20(jQeury)-0769AD" /></a>
+* <a href="https://rateyo.fundoocode.ninja/" target="_blank"><img src="https://img.shields.io/badge/RateYo%20(jQeury)-0769AD" /></a>
