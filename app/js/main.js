@@ -58,7 +58,7 @@ $(function () {
   $('.select-styled, .product-single__number').styler();
   // === / FORM STYLER PLUGIN ===
 
-  // === [PRODUCT-PAGE] 2XSLIDER JQ ===
+  // === [PRODUCT-PAGE] 2X SLIDER JQ ===
   $('.product-slide__thumbs').slick({
     asNavFor: '.product-slide__large',
     slidesToShow: 4,
@@ -81,7 +81,7 @@ $(function () {
       },
     ],
   });
-  // === / [PRODUCT-PAGE] 2XSLIDER JQ ===
+  // === / [PRODUCT-PAGE] 2X SLIDER JQ ===
 
   // === [PRODUCT-PAGE] TABS JQ ===
   $('.product-tabs__top-item').on('click', function (e) {
@@ -136,11 +136,11 @@ $(function () {
 
   // === COUNTDOWN JS ===
   function getTimeRemaining(endtime) {
-    const total = Date.parse(endtime) - Date.parse(new Date());
-    const seconds = Math.floor((total / 1000) % 60);
-    const minutes = Math.floor((total / 1000 / 60) % 60);
-    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-    const days = Math.floor(total / (1000 * 60 * 60 * 24));
+    const total = Date.parse(endtime) - Date.parse(new Date()),
+      seconds = Math.floor((total / 1000) % 60),
+      minutes = Math.floor((total / 1000 / 60) % 60),
+      hours = Math.floor((total / (1000 * 60 * 60)) % 24),
+      days = Math.floor(total / (1000 * 60 * 60 * 24));
 
     return {
       total,
@@ -152,19 +152,19 @@ $(function () {
   }
 
   function initializeClock(id, endtime) {
-    const clock = document.querySelector('.promo__countdown');
-    const daysSpan = clock.querySelector('.promo__countdown-days');
-    const hoursSpan = clock.querySelector('.promo__countdown-hours');
-    const minutesSpan = clock.querySelector('.promo__countdown-minutes');
-    const secondsSpan = clock.querySelector('.promo__countdown-seconds');
+    const clock = document.querySelector('.promo__countdown'),
+      daysSpan = clock.querySelector('.promo__countdown-days'),
+      hoursSpan = clock.querySelector('.promo__countdown-hours'),
+      minutesSpan = clock.querySelector('.promo__countdown-minutes'),
+      secondsSpan = clock.querySelector('.promo__countdown-seconds');
 
     function updateClock() {
       const t = getTimeRemaining(endtime);
 
-      daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+      daysSpan.textContent = t.days;
+      hoursSpan.textContent = ('0' + t.hours).slice(-2);
+      minutesSpan.textContent = ('0' + t.minutes).slice(-2);
+      secondsSpan.textContent = ('0' + t.seconds).slice(-2);
 
       if (t.total <= 0) {
         clearInterval(timeinterval);
