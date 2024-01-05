@@ -75,7 +75,7 @@ function images() {
 }
 
 function build() {
-  return src(['app/**/*.html', 'app/css/style.min.css', 'app/js/main.min.js'], {
+  return src(['app/**/*.html', 'app/css/*.min.css', 'app/js/main.min.js'], {
     base: 'app',
   }).pipe(dest('dist'));
 }
@@ -101,4 +101,4 @@ exports.cleanDist = cleanDist;
 
 exports.default = parallel(nunjucks, styles, scripts, browsersync, watching);
 
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanDist, styles, scripts, images, build);
