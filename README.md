@@ -1,6 +1,6 @@
 ﻿<h1 align="center">« Marcho »</h1>
-<h5 align="center">Online store and blog for stylish women's clothing.</h5>
-&nbsp;
+<h3 align="center">Online store and blog for stylish women's clothing.</h3>
+
 <a href="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho.jpg" target="_blank">
   <img src="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho-small.jpg" align="center" />
 </a>
