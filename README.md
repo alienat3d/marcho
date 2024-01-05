@@ -15,7 +15,7 @@
 * <img src="https://img.shields.io/badge/NPM-CB3837?logo=npm" />
 * <img src="https://img.shields.io/badge/Gulp-CF4647?logo=gulp" />
 
-## Libraries used for development:
+## NPM-packages that are used for development:
 
 * <a href="https://www.npmjs.com/package/gulp-nunjucks-render" target="_blank"><img src="https://img.shields.io/badge/Nunjucks-slategray?logo=nunjucks" /></a>
 * <a href="https://www.npmjs.com/package/autoprefixer" target="_blank"><img src="https://img.shields.io/badge/Autoprefixer-slategray?logo=autoprefixer" /></a>
@@ -24,7 +24,7 @@
 * <a href="https://www.npmjs.com/package/gulp-imagemin" target="_blank"><img src="https://img.shields.io/badge/Gulp%20ImageMin-slategray" /></a>
 * <a href="https://browsersync.io/" target="_blank"><img src="https://img.shields.io/badge/BrowserSync-slategray" /></a>
 
-## JS & jQuery libraries used for functionality:
+## JS & jQuery libraries that are used for functionality:
 
 * <a href="https://fancyapps.com/fancybox/" target="_blank"><img src="https://img.shields.io/badge/FancyBox-JS-F7DF1E" /></a>
 * <a href="http://kenwheeler.github.io/slick/" target="_blank"><img src="https://img.shields.io/badge/Slick%20Carousel-jQuery-0769AD" /></a>
