@@ -4,7 +4,8 @@
   <img src="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho-small.jpg" align="center" />
 </a>
 
-##  <a href="https://alienat3d.github.io/marcho/" target="_blank" style="color: #9BC75D;">Click to see <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a>
+<div style="display: flex;">
+<a href="https://alienat3d.github.io/marcho/" target="_blank" style="display: flex; align-items: center;"><span style="color: #9BC75D; font-size: 32px;">Click to see</span> <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a>
 
 ## Technologies used:
 * <img src="https://img.shields.io/badge/HTML5-slategray?logo=html5" />
