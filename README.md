@@ -4,7 +4,6 @@
 <a href="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho.jpg" target="_blank">
   <img src="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho-small.jpg" align="center" />
 </a>
-&nbsp;
 <div align="center"><h2><a href="https://alienat3d.github.io/marcho/" target="_blank">Click to see :computer: <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a></h2></div>
 
 ## Technologies used:
