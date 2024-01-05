@@ -1,11 +1,21 @@
-﻿<h1>« Marcho »</h1>
+﻿<style>
+  .deploy-link{
+    display: flex; 
+    align-items: center;
+  }
+  .deploy-span{
+    color: #9BC75D; 
+    font-size: 32px;
+  }
+</style>
+<h1>« Marcho »</h1>
 > Online store and blog for stylish women's clothing.
 <a href="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho.jpg" target="_blank">
   <img src="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho-small.jpg" align="center" />
 </a>
 
 <div style="display: flex;">
-<a href="https://alienat3d.github.io/marcho/" target="_blank" style="display: flex; align-items: center;"><span style="color: #9BC75D; font-size: 32px;">Click to see</span> <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a>
+<a class="deploy-link" href="https://alienat3d.github.io/marcho/" target="_blank"><span class="deploy-span">Click to see</span> <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a>
 
 ## Technologies used:
 * <img src="https://img.shields.io/badge/HTML5-slategray?logo=html5" />
