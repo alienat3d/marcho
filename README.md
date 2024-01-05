@@ -1,9 +1,5 @@
 ﻿<style>
-  .deploy-link{
-    display: flex; 
-    align-items: center;
-  }
-  .deploy-span{
+  deploy-span{
     color: #9BC75D; 
     font-size: 32px;
   }
@@ -15,7 +11,7 @@
 </a>
 
 <div style="display: flex;">
-<a class="deploy-link" href="https://alienat3d.github.io/marcho/" target="_blank"><span class="deploy-span">Click to see</span> <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a>
+<a href="https://alienat3d.github.io/marcho/" target="_blank"><deploy-span>Click to see</deploy-span> <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a>
 
 ## Technologies used:
 * <img src="https://img.shields.io/badge/HTML5-slategray?logo=html5" />
