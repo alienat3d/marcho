@@ -6,7 +6,7 @@
 </a>
 <div align="center"><h2><a href="https://alienat3d.github.io/marcho/" target="_blank">Click to see :computer: <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a></h2></div>
 
-## Technologies used:
+## Technologies that are used in this project:
 
 - <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff" alt="HTML5 badge" />
 - <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3" alt="CSS3 badge" />
