@@ -1,8 +1,8 @@
 ﻿<h1 align="center">« Marcho »</h1>
 <h3 align="center">Online store and blog for stylish women's clothing.</h3>
 
-<a href="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho.jpg?raw=true" target="_blank">
-  <img src="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho-small.jpg" alt="Marcho smaller screenshot" align="center" />
+<a href="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho.webp?raw=true" target="_blank">
+  <img src="https://github.com/alienat3d/icons-for-github/blob/dev/screenshots/marcho-small.webp" alt="Marcho smaller screenshot" align="center" />
 </a>
 <div align="center"><h2><a href="https://alienat3d.github.io/marcho/" target="_blank">Click to see :computer: <img src="https://github.com/alienat3d/icons-for-github/blob/dev/deploy.svg" /></a></h2></div>
 
